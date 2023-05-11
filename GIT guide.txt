@@ -1,0 +1,445 @@
+git log format string cheatsheet
+https://devhints.io/git-branch
+https://www.hostinger.es/tutoriales/renombrar-rama-git
+tutorial bueno
+https://www.atlassian.com/git/tutorials/syncing/git-pull
+
+
+[Customizing Git - Git Configuration]
+https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
+[full book on git]
+https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
+
+crea el directorio donde quieres crear la copia.
+
+
+[no es necesario que se rastree cada cambio y aunque tengas muchas cosas solo agrega las excepciones al gittignore para que no te salga el mensaje rojo ese. Es decir enfocate en lo que realmente quieres rastrear que muy seguramente sera solo el codigo]
+
+cd + direccion [change directories]
+mkdir [crear carpetas en la direccion actual]
+ls [curent directory content list]
+ls -a [curent directory content list hidden files included]
+cd .. [to go up one level]
+pwd [display current directory]
+mw <nombre archivo ext incluida> + <nuevo nombre ext incluida> [cambia el nombre]
+git mw <nombre archivo ext incluida> + <nuevo nombre ext incluida> [cambia el nombre sin tener que hacer el add, solo necesita el commit]
+git config --local/global user.name + "nombre"
+git config --local/global user.email + "email"ls
+
+[right click a directory in window and select "bash here" to open in git]
+
+git add + <filename> [agrega el archivo/carpeta al monitoreo]
+gitignore [configura un archivo de texto con ext ".gitignore" para ignorar archivos formato de archivo: "nombrearchivo.(extencion)"] [NOT RECOMENDED]
+
+git add . [agrega todo el directorio (carpeta) actual para ser monitoreado]
+
+git add + <file name> [add file to stage (if modified)]
+git commit -m + <comment inside " "> [commit staged elements]
+
+git status [shows current stage status / not tracked files and ready to commit files]
+
+git status -s [same as git status but simplified]
+
+	M (red)		-Modification NOT added to stage
+	M (green)	- Modification added to stage
+	?? (red)	- File not tracked
+	A (green)	- File added to track
+
+git diff [shows the actual changes {instead of the comments} waiting to be staged]
+git diff --staged [shows the actual changes {instead of the comments} staged]
+git log
+git log --oneline [simplified version of git log]
+
+cat <filename> [shows file content]
+
+
+git branch -m + [new name] renombrar la branch
+git branch -d branch_name // borrar una rama local
+git checkout + [branch-name] // pasar a la rama
+cd repository-name [Navega a la raíz de la rama maestra]
+git branch [new-branch-name] crea una nueva rama desde la rama maestra
+git branch -a [listar todas la branches]
+
+<p> cambiar el nombre de una rama local desde otra rama usando los siguientes dos comandos: 
+ 	git checkout master
+ 	git branch -m old-name new-name
+</p>
+
+
+
+
+----------------git ignore------------ [[.env] variables de ntorno solo referencia]
+
+[.gitignore] archivo de texto con ext .gitignore
+	se ecribe las extenciones ejemplo:
+		.env
+	tambien pueden ser carpetas
+		nombreCarpeta/	
+
+git diff [shows the actual changes {instead of the comments} waiting to be staged]
+git diff --staged [shows the actual changes {instead of the comments} staged]
+
+------------------------commit y area de preparacion-------------
+
+En escencia una confirmacion [commit] es un save point, al cual se puede regresar en cualquier momento, en la medida que se va anvanzando (se cuple la tarea para la cual se creo la rama [branch] estas ramas se mergen [merge] y cuando se tengan avances significativos [autodefinido] se realiza un push hacia el repositorio remoto.
+
+git diff [shows the actual changes {instead of the comments} waiting to be staged]
+git diff --staged [shows the actual changes {instead of the comments} staged]
+
+
+git add + <file name> [agrega el archivo (si ha sido modificado)al area de preparacion, aun no esta confirmado ni integrado a la rama]
+
+git rm --cached <file name> [retira el archivo del area de preparacion [staged] pero no revierte los cambios que hayas realizado en el archivo en si]
+
+git rm <file name> [descarta los cmbios y revierte los cambios que hayas realizado en el archivo en si]
+
+git commit -m + <"comentario descriptivo entre comillas"> [confirma los cambios y los integra en la snapshot de tu codigo]
+
+Si quieres saltarte el área de preparación (no tener que [add] cada archivo individualmente antes de confirmar [commit] , Git te ofrece un atajo sencillo:
+
+git commit -a [Git prepara automáticamente todos los archivos rastreados antes de confirmarlo, ahorrándote el paso de git add]
+
+git -p [muestra los commit y muestra que se realizo] // :q sale del visor de commit
+
+git restore [nombre del archivo] revierde el "add" y revierte los cambios en el archivo (no afecta si ya esta commited)
+
+git restore --staged [nombre del archivo] revierde el "add" pero NO revierte los cambios en el archivo (no afecta si ya esta commited)
+
+git revert [id del commit] el id del commit se encuentra con un [git log] (:X para cerrar el popup) este SI revierte los cambios realizados en el archivo.
+
+
+---------------------------- repositorios remotos-------------
+
+https://www.aluracursos.com/blog/ssh-acceso-remoto-a-servidores [para leer]
+
+
+git remote add [url o direccion local]
+git push -u [nombre repositorio] [nombre de la rama] esto crea una rama y la sube al 		repositorio (si no existe)
+git push [nombre repositorio] [nombre de la rama]
+
+
+estructura:
+
+git fetch
+git push/pull [nombre del repositorio al que quieres hacer push o del que quieres pull] + trunk [nombre de la rama]
+
+[git pull] runs [git fetch] with the given parameters and then depending on configuration options or command line flags, will call either [git rebase] or [git merge] to reconcile diverging branches.
+
+[git pull] automatically merges the commits without letting you review them first. If you don’t carefully manage your branches, you may run into frequent conflicts.
+
+[git fetch] gathers any commits from the target branch that do not exist in the current branch and stores them in your local repository. However, it does not [merge ] them with your current branch. This is particularly useful if you need to keep your repository up to date, but are working on something that might break if you update your files. To {integrate the commits into your current branch}, you must use [git merge] afterwards.
+
+
+<p> If you have a local clone, you can update it by running the following commands.
+	git branch -m trunk main
+	git fetch origin
+	git branch -u origin/main main
+	git remote set-head origin -a
+</p>
+
+git remote
+git remote add [direccion local o web]
+git remote -v
+git init [crear repositorio en la carpeta de trabajo]
+git init --bare [crea repositorio vacio]
+
+Cómo agregar links a repositorios remotos, con el comando git remote add;
+Cómo descargar un repositorio por primera vez clonándolo con el comando git clone;
+Cómo actualizar nuestro repositorio con los datos en el repositorio remoto, usando git pull;
+
+
+git remote add [nombre del servidor] + [direcicon local/direccion url]
+git remote [muestra el servidor remoto conocido(despues de haber sido agregado)]
+git remote -v [muestra los metodos disponibles]
+git log
+
+git status
+// rastreo // 
+git status
+git add + [nombre del archivo] [se puede "git add ." para agregar toda la carpeta]
+git commit -m + [comentario ente " "]
+
+
+git clone [almenos para lo local] /c/users/ejemplo/nombre carperta donde esta el servidor/ [aqui se deja un espacio] + [nombreQue quiero lleve esta carpeta(nueva)]
+
+-------------------------------- fetch y pull. -----------------------
+
+
+
+fetch y pull.
+
+git fetch es el comando que le dice a tu git local que recupere la última información de los metadatos del original (aunque no hace ninguna transferencia de archivos. Es más bien como comprobar si hay algún cambio disponible).
+
+git pull por otro lado hace eso Y trae (copia) esos cambios del repositorio remoto.
+
+Por ejemplo:
+
+git pull origin ankur bugfix
+
+Lo que hay que tomar de aquí es tener en cuenta que generalmente hay al menos tres copias de un proyecto en tu estación de trabajo.
+
+Una copia es tu propio repositorio con tu propio historial de confirmación (el ya guardado, por así decirlo).
+
+La segunda copia es tu copia de trabajo donde estás editando y construyendo (aún sin realizar commit a tu repositorio).
+
+La tercera copia es tu copia local "en caché" de un repositorio remoto (probablemente el original de donde clonaste el tuyo).
+
+Puedes usar git fetch para saber los cambios hechos en el repo/rama remoto desde tu último pull. Esto es útil para permitir la comprobación antes de hacer un pull real, lo que podría cambiar los archivos en tu rama actual y en la copia de trabajo (y potencialmente perder tus cambios, etc.).
+
+git fetch    
+git diff ...origin
+
+
+[git fetch] gathers any commits from the target branch that do not exist in the current branch and stores them in your local repository. 
+
+However, it does not [merge] them with your current branch. 
+
+This is particularly useful if you need to keep your repository up to date, but are working on something that might break if you update your files. 
+
+To {integrate the commits into your current branch}, you must use [git merge] afterwards.
+
+
+------------------------- integrando [merge] branches---------------------
+
+Te ubucas en la rama a la cual quieres traer los cambios. NO ES PUSH es Collapse or PULL [debes estar en la rama que quieres actualizar con los cambios de las ramas]
+
+git branch [nombre de la nueva brach] crear una nueva brach
+git branch // muestra las brachs disponibles
+git checkout [nombre de una brach] // se cambia a trabajar en esa brach
+git checkout -b [nombre de nueva branch] // crea una nueva branch y se cambia de nivel a esa branch
+
+git merge [nombre de la branch que queremos integrar a la branch en la que nos encontramos]
+:x enter para salir del prompt 
+
+*** Para hacer merge, nos ubicamos en la branch que queremos sea la principal [la que ya es la principal de las dos] y deesde la branch principal se llama al merge de la otra.
+
+git rebase [nombre de la brach que queremos integrar] esto coloca los commits de la branch que estamos llamando y los coloca de ultimo en la cola de los commits de la branch principal
+
+
+El merge junta los trabajos y genera un merge commit. El rebase aplica los commits de otra Branch en la Branch actual.
+https://medium.com/datadriveninvestor/git-rebase-vs-merge-cc5199edd77c.
+
+git pull antes de hacer un push para asegurar el up to date
+
+
+
+Vimos lo simple que es resolver los conflictos identificados por Git al intentar hacer merge.
+
+Ahora, genera un conflicto y, en lugar de usar merge, usa rebase para actualizar el master:
+
+Vé a la branch titulo
+Commitea algo
+Vé a la branch master, commitea un cambio en la misma línea
+Ejecuta git rebase titulo
+Mira la salida de Git y usa la información que te da; después de corregir el conflicto, continúa con el rebase.
+
+--------------------------------revirtiendo cambios---------------------
+
+git log -n <numero x> [muestra los ultimos X commitments]
+
+git diff <hash 1> <..> <ash 2> [muestra los cambios realizados deste el primer hash hasta el segundo.
+
+git diff [muestra los cambios realidados que aun no estan staged] 
+
+git restore [nombre del archivo] descarta los cambios realizados en el archivo [borra los cambios en html directamente]
+
+git restore --staged [nombre del archivo] revierde el "add" pero NO revierte los cambios en el archivo (no afecta si ya esta commited)
+
+git revert [id del commit] el id del commit se encuentra con un [git log] (:X para cerrar el popup) este SI revierte los cambios realizados en el archivo.
+
+Git checkout [hash del commit]se puede cambiar de posicion a un estado anterior, se pueden hacer comits nuevos y experimentar con variantes, pero todos los cambios seran descartados una vez cambien se rama. [a diferencia del restore/pull u otros similares, este comando te premite ver el estado y hacer modificaciones sin que estas afecten a ningun estado ya existente]
+
+git switch -c <new-brach-name> [si se quieren guardar los cambios, se crea una nueva rama y se agregan los cambios que se hayan confirmado]
+
+git switch -c [deshacer la operacion anterior de crear un branch con commits de un stado pasado]
+
+>>En esta aula aprendimos:<<
+
+
+[git restore <archivos>] Para deshacer un cambio antes de agregarlo para commit(con git add), podemos usar el comando: 
+
+Para deshacer un cambio después de agregarlo para commit, primero debemos ejecutar 
+[git restore --staged <archivos>] y luego podemos deshacerlos con 
+[git restore <files>]
+
+[git revert] Para revertir los cambios realizados en un commit, el comando puede ser la solución;
+
+[git revert] El comando  genera un nuevo commit informando que los cambios fueron deshechos
+
+
+
+-------------------guardando codigos sin terminar (mientras tanto)-----
+
+git stash [guarda el trabajo como una especie de bolsillo, lo identifica como WIP {work in progress}] despues del nombre de la branch the asigna un hash 00adc00
+esto "borra" del archivo los cambios que no hayan sidos commited hasta el momento y deja una copia "limpia" del archivo para que puedas hacer cmabios que si se quieran commit o pasar al archivo central
+
+para recuperal el trabajo guardado en un stash se usa:
+
+git stash list [esto the da una lista de los stash guardados, indexados a partir de "0" - "1" etc]
+
+git stash apply [#] ie: git stash 0 // si lo llamas asi, las modificaciones se cargan en el archivo, pero continuan en la lista del stash [git stash drop [#] borra el stash de la lista]
+
+git stash pop // se cargan las modificaciones del ULTIMO stash agregado a la lista de stash y lo borra del stash list
+
+ ------ OJO el commit carga los cambios realizados a tu copia local del file es importante que una vez tengas tu codigo o seccion funcional realices un [push] para actualizar tu repositorio remoto---------
+
+
+
+[git stash] Guardar un trabajo y reanudarlo más tarde;
+[git stash list] Ver qué cambios hay en el stash;
+[git stash apply <número>] Aplicar un cambio específico al stash;
+[git stash drop <número>] elimina un elemento determinado del stash;
+[git stash pop] aplica (en la branch) y elimina (del stach) el último cambio que se agregó al stash;
+[git checkout] Dejar la copia del código de nuestra aplicación en el estado que queremos:
+	[git checkout <branch>] deja el código en el estado de una branchcon el nombre 		<branch>;
+	[git checkout <hash>] deja el código en el estado de commit con el hash <hash>.
+
+--------------tag[punto que no puede ser modificado] flags y releases {publicaciones}----------
+
+
+git log -n <numero x> [muestra los ultimos X commitments]
+
+git diff <hash 1> <..> <ash 2> [muestra los cambios realizados deste el primer hash hasta el segundo.
+
+git diff [muestra los cambios realidados que aun no estan staged] 
+
+git tag -a <nombre> agrega un tag [o version] ie. git tag -a v0.1.0
+
+git tag -a <nombre> + - m <"agrega un comentario"> 
+
+git push <repository> + <v0.1.0> [envia la tag al servidor, igual que git push branch]
+
+-------------common Git commands used in various situations:------------------
+
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+:
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+:
+--------------------------------pull - fetch ------
+
+git pull
+git remote git fetch git push git pull
+The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content. Merging remote upstream changes into your local repository is a common task in Git-based collaboration work flows. The git pull command is actually a combination of two other commands, git fetch followed by git merge. In the first stage of operation git pull will execute a git fetch scoped to the local branch that HEAD is pointed at. Once the content is downloaded, git pull will enter a merge workflow. A new merge commit will be-created and HEAD updated to point at the new commit.
+
+Git pull usage
+How it works
+The git pull command first runs git fetch which downloads content from the specified remote repository. Then a git merge is executed to merge the remote content refs and heads into a new local merge commit. To better demonstrate the pull and merging process let us consider the following example. Assume we have a repository with a main branch and a remote origin.
+
+Main on remote origin vs main on repo
+In this scenario, git pull will download all the changes from the point where the local and main diverged. In this example, that point is E. git pull will fetch the diverged remote commits which are A-B-C. The pull process will then create a new local merge commit containing the content of the new diverged remote commits.
+
+Remote origin/main merged to local main
+In the above diagram, we can see the new commit H. This commit is a new merge commit that contains the contents of remote A-B-C commits and has a combined log message. This example is one of a few git pull merging strategies. A --rebase option can be passed to git pull to use a rebase merging strategy instead of a merge commit. The next example will demonstrate how a rebase pull works. Assume that we are at a starting point of our first diagram, and we have executed git pull --rebase.
+
+rebase
+In this diagram, we can now see that a rebase pull does not create the new H commit. Instead, the rebase has copied the remote commits A--B--C and rewritten the local commits E--F--G to appear after them them in the local origin/main commit history.
+
+Common Options
+git pull <remote>
+Fetch the specified remote’s copy of the current branch and immediately merge it into the local copy. This is the same as git fetch ＜remote＞ followed by git merge origin/＜current-branch＞.
+
+git pull --no-commit <remote>
+Similar to the default invocation, fetches the remote content but does not create a new merge commit.
+
+git pull --rebase <remote>
+Same as the previous pull Instead of using git merge to integrate the remote branch with the local one, use git rebase.
+
+git pull --verbose
+Gives verbose output during a pull which displays the content being downloaded and the merge details.
+
+Git pull discussion
+You can think of git pull as Git's version of svn update. It’s an easy way to synchronize your local repository with upstream changes. The following diagram explains each step of the pulling process.
+
+git pull
+You start out thinking your repository is synchronized, but then git fetch reveals that origin's version of main has progressed since you last checked it. Then git merge immediately integrates the remote main into the local one.
+
+Git pull and syncing
+git pull is one of many commands that claim the responsibility of 'syncing' remote content. The git remote command is used to specify what remote endpoints the syncing commands will operate on. The git push command is used to upload content to a remote repository.
+
+The git fetch command can be confused with git pull. They are both used to download remote content. An important safety distinction can be made between git pull and get fetch. git fetch can be considered the "safe" option whereas, git pull can be considered unsafe. git fetch will download the remote content and not alter the state of the local repository. Alternatively, git pull will download remote content and immediately attempt to change the local state to match that content. This may unintentionally cause the local repository to get in a conflicted state.
+
+Pulling via Rebase
+The --rebase option can be used to ensure a linear history by preventing unnecessary merge commits. Many developers prefer rebasing over merging, since it’s like saying, "I want to put my changes on top of what everybody else has done." In this sense, using git pull with the --rebase flag is even more like svn update than a plain git pull.
+
+In fact, pulling with --rebase is such a common workflow that there is a dedicated configuration option for it:
+
+git config --global branch.autosetuprebase always
+After running that command, all git pull commands will integrate via git rebase instead of git merge.
+
+Git Pull Examples
+The following examples demonstrate how to use git pull in common scenarios:
+
+Default Behavior
+git pull
+Executing the default invocation of git pull will is equivalent to git fetch origin HEAD and git merge HEAD where HEAD is ref pointing to the current branch.
+
+Git pull on remotes
+git checkout new_feature
+git pull <remote repo>
+This example first performs a checkout and switches to the branch. Following that, the git pull is executed with being passed. This will implicitly pull down the newfeature branch from . Once the download is complete it will initiate a git merge.
+
+Git pull rebase instead of merge
+The following example demonstrates how to synchronize with the central repository's main branch using a rebase:
+
+git checkout main
+git pull --rebase origin
+This simply moves your local changes onto the top of what everybody else has already contributed.
+
+
+
+ 

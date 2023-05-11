@@ -1,17 +1,21 @@
 header {
 position: relative;
 scale: screen;
-background-color: aquamarine;
+background-color: rgb(194, 164, 241);
+padding: 5px;
 
 }
 
-.logoHeader {
-    width: 5%;
-    height:5%;
-}
-.containerLogo{
-    width: 5%;
-    height:5%;
-    -ms-flex-align: start;
+.containerLogo {
+    width: 70%; 
+    margin-left: auto;
+    margin-right: auto; 
 }
 
+.logoHeader{
+    width: 25%;
+    height: 25%;
+    margin: 10px;
+    padding: 15px;
+    
+}
