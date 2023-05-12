@@ -1,21 +1,34 @@
+
+body{padding: 2px;}
+
 header {
 position: relative;
 scale: screen;
 background-color: rgb(194, 164, 241);
-padding: 5px;
+padding: 20px;
+/*border-radius: 5px;*/
+margin: 40px;
+height: 70px;
+border:2px solid #030303;
 
 }
 
 .containerLogo {
-    width: 70%; 
-    margin-left: auto;
-    margin-right: auto; 
+ height: 60px;
+ width: 60px;
+ display: flex;
+ 
 }
 
 .logoHeader{
-    width: 25%;
-    height: 25%;
-    margin: 10px;
-    padding: 15px;
-    
+    box-sizing: border-box;
+    position: relative;
+    top: 6%;   
+    padding: 3px;
+    left: 5%;
+   } 
+
+.containerLogo :hover {
+
+    height: 62px;
 }
