@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FG001 Integrated Blurr Node v5100.1 </title>
+    <link rel="stylesheet" href="reset.css">    
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="reset.css">
+    
 
 </head>
 
@@ -19,37 +20,34 @@
         <img class="logoHeader" src="images/gearLogo.png" alt="Gear Logo" >
         </div>
        <!-- <p> Cipher </p> -->
-        
-    </header>
+
+      </header>
 
     <main>
+        <div class="mainContainer">
 
-        <div class="cipherSelector">
+            <div class="cipherSelector">
 
-        </div>
-
-        <div class="messageEncrypter">
-
-        </div>
-
-        <div class="messageReader">
+            </div>
 
 
-        </div>
+            <div class="messageEncrypter">
+             
+                <p>encripter</p>
+
+            </div>
+
+
+            <div class="messageReader">
+                
+                <p>reader</p>
+
+            </div>
+
 
     </main>
 
-    <script>
-        function rotate(value)
-        {
-        document.getElementById('cam2').style.webkitTransform="rotate(" + value + "deg)";
-        document.getElementById('cam2').style.msTransform="rotate(" + value + "deg)";
-        document.getElementById('cam2').style.transform="rotate(" + value + "deg)";
-        }
-        </script>
-        
-        <button type="button" onclick="rotate(180)" class="btn2">Rotar imagen</button>
-
+    
     
 </body>
 </html>

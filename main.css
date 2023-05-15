@@ -4,21 +4,24 @@ body{padding: 2px;}
 header {
 position: relative;
 scale: screen;
-/*display: flex;
-align-items: center;*/
+display: flex;
 background-color: rgb(181, 152, 226);
 padding: 10px;
 /*border-radius: 5px;*/
-margin: 40px;
+width: 100%;
+border: 0.5px solid #2b2727ad;
 height: 70px;
-border:20px solid #2d0f0f;
+box-sizing: border-box;
+
+
 
 }
 
 .containerLogo {
 
- position: absolute;
- left: 4%;
+ position: relative;
+ 
+ left: 1%;
  height: 45px;
  width: 45px;
  display: flex;
@@ -29,7 +32,7 @@ border:20px solid #2d0f0f;
 .logoHeader{
     transition: all 800ms;
     position: relative;
-    top: 30%;
+    top: 5%;
 
 }
 
@@ -40,3 +43,46 @@ border:20px solid #2d0f0f;
  -webkit-transform:rotate(60deg) scale(1.3); /* Opera, Chrome, and Safari */
 
 } 
+
+.mainContainer {
+
+    position: relative;
+    width: 100%;
+    background-color: rgba(252, 212, 245, 0.521);
+    padding: 10px;
+    height: 400px;
+    box-sizing: border-box;
+
+    border: 1px solid #2d0f0f;
+
+}
+
+.messageEncrypter {
+    
+    display: inline-block;
+    background-color: rgb(142, 132, 156);
+    vertical-align: top;
+    box-sizing: border-box;
+    
+    padding: 10px;
+    width: 50%;
+    height: 95%;
+    left: 2px;
+    border: 2px solid #2d0f0f;
+    border-radius: 5px;
+
+}
+
+.messageReader {
+  
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    box-sizing: border-box;
+    background-color: rgb(209, 170, 219);
+    padding: 10px;
+    
+    border-radius: 5px;
+    height: 95%;
+    border: 2px solid #2d0f0f;
+}
