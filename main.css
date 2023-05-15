@@ -4,50 +4,39 @@ body{padding: 2px;}
 header {
 position: relative;
 scale: screen;
-background-color: rgb(194, 164, 241);
-padding: 20px;
+/*display: flex;
+align-items: center;*/
+background-color: rgb(181, 152, 226);
+padding: 10px;
 /*border-radius: 5px;*/
 margin: 40px;
 height: 70px;
-border:2px solid #030303;
+border:20px solid #2d0f0f;
 
 }
 
 .containerLogo {
 
-position: relative;
- top 50%;
- left: 50%;
- height: 55px;
- width: 55px;
+ position: absolute;
+ left: 4%;
+ height: 45px;
+ width: 45px;
  display: flex;
- 
+ transition: all 300ms;
+
 }
 
 .logoHeader{
-    box-sizing: border-box;
+    transition: all 800ms;
     position: relative;
-    top: 6%;   
-    padding: 3px;
-    left: 5%;
-   } 
-
-.containerLogo :hover {
-    
- transform:rotate(90deg);
- -ms-transform:rotate(90deg); /* IE 9 */
- -webkit-transform:rotate(90deg); /* Opera, Chrome, and Safari */
- 
- /*
- transform:scale(1.1);
- -ms-transform: scale(1.3);
- -webkit-transform:scale(1.3); */
- height: 62px;
- 
-
- -webkit-transition-duration: 2s;
-    -moz-transition-duration: 2s;
-    -o-transition-duration: 2s; 
-    transition-duration: 2s;
+    top: 30%;
 
 }
+
+.logoHeader:hover {
+
+ transform:rotate(60deg) scale(1.3);
+ -ms-transform:rotate(60deg) scale(1.3); /* IE 9 */ 
+ -webkit-transform:rotate(60deg) scale(1.3); /* Opera, Chrome, and Safari */
+
+} 
