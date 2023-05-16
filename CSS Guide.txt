@@ -1,0 +1,8 @@
+Maquetado responsive con CSS Grid | Diseño adaptativo (excelente base)
+
+https://www.youtube.com/watch?v=T4t00Hd3qZc
+
+-----------------------------------/////////----------------------------
+
+si hay un nombre errado [class, id] CSS no ejecuta lo que esta debajo (pero tampoco te avisa) lo mismo sucede con comandos errados (por verificar)
+
