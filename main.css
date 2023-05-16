@@ -15,7 +15,7 @@ html {
 body{
         font-family:"public sans", sans-serif;
         font-size: 1.2rem;
-        min-width: 100;
+        min-height: 100%;
     }
 
 .contenedorMain > * {
@@ -26,22 +26,22 @@ body{
     }
 .header{
         grid-area: header;
-        background-color: rgba(208, 13, 13, 0.316);
+        background-color: rgba(13, 32, 208, 0.316);
     }
 
-.header{
+.main{
     grid-area:main;
-    background-color: rgba(208, 13, 13, 0.316);
+    background-color: rgba(13, 208, 182, 0.316);
 }
 
-.header{
-    grid-area: sideField;
-    background-color: rgba(208, 13, 13, 0.316);
+.sidefield{
+    grid-area: sidefield;
+    background-color: rgba(153, 13, 208, 0.316);
 }
 
-.header{
+.footer{
     grid-area: footer;
-    background-color: rgba(208, 13, 13, 0.316);
+    background-color: rgba(170, 157, 81, 0.493);
 }
 
     .contenedorMain {
@@ -54,16 +54,14 @@ body{
         "footer";
     }
 
+    
     @media (min-width:600px) {
 
     .contenedorMain {
-        display: grid;
-        gap: 10px;
-        grid-template-areas: 
-        "header" "header"
-        "main" "sidefield"
-        
-        "footer" "footer";
+         grid-template-areas: 
+        "header header"
+        "main   sidefield"
+        "footer footer";
         }
     }
 
