@@ -8,32 +8,43 @@
 }
 
 html {
-
         height: 100%;
+
 }
+
+
 
 body{
         font-family:"public sans", sans-serif;
         font-size: 1.1rem;
         min-height: 100%;
+        background-image: url(images/maquina-de-turing.jpg);
+        background-color: rgba(162, 252, 255, 0.842);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+
+
+        
 }
 
 .contenedorMain > * { /*this expresion set an style for each child element */
-        box-shadow: -1px 1px 7px 0px rgba(150, 97, 203, 0.527);
+        box-shadow: -1px 1px 7px 0px rgba(150, 97, 203, 0.767);
         border-radius: 4px;
         padding: 4px; /*overrided by each element padding // needed to adjust to each section needs, leaved here for reference  */
-        text-align: center;
+       text-align: center; /*/deprecated, causes buttons aling (ie. center) problems// */ 
 }
+
 
 .header{
         grid-area: header;
-        background-color: rgba(13, 32, 208, 0.316);
+        background-color: rgba(13, 32, 208, 0.575);
         padding: 4px;
 }
 
 .keyselector{
     grid-area: keyselector;
-    background-color: rgba(158, 230, 43, 0.356);
+    background-color: rgba(158, 230, 43, 0.664);
     padding: 4px;
 }
 
@@ -44,39 +55,47 @@ body{
 .main{
     position: relative;
     grid-area:main;
-    background-color: rgba(13, 208, 182, 0.316);
+    background-color: rgba(13, 208, 182, 0.651);
     padding: 10px;
     overflow: hidden;
-   
+    border: 3px;
+    border-color: black;
+    height: 100%;
+    width: 100%;
 }
 
 .mainbuttons{
 
     margin: 2px;
-    font-display:inherit ;
-    position: absolute;
+    position: relative;
     top: 82%;
-    min-width: 100%;
-    
-     
+    min-width: 98%; /*if set to 99+% causes the box dims to go over container box width [due container padding] */
+    box-sizing: border-box;
+        
 }
 
-.mainbuttons li{
+.mainbuttons li p{
 
-    display: inline-flex;
-    width:auto;
+    /*necesita ajustar tamaño y estilo de texto de boton {no esta siendo afectado por la propiedad en body} */
+    display: inline;
+ /*   width:auto; */
     margin: 10px;
     border: 1px solid black;
     border-radius: 3px;
     padding: 2px;
-    background-color: rgba(241, 229, 212, 0.753);
-    
-   
+    background-color: rgba(241, 229, 212, 0.747);
+    transition: all 500ms;
+}
+
+.mainbuttons li p:hover{
+
+    cursor: pointer;
+
 }
 
 .sidefield{
     grid-area: sidefield;
-    background-color: rgba(153, 13, 208, 0.316);
+    background-color: rgba(153, 13, 208, 0.74);
     padding: 10px;
 }
 
@@ -86,7 +105,7 @@ body{
 
 .footer{
     grid-area: footer;
-    background-color: rgba(170, 157, 81, 0.493);
+    background-color: rgba(170, 157, 81, 0.753);
     padding: 4px;
 }
 
