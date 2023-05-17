@@ -74,7 +74,7 @@ body{
         
 }
 
-.mainbuttons li p{
+.mainbuttons li{
 
     /*necesita ajustar tamaño y estilo de texto de boton {no esta siendo afectado por la propiedad en body} */
     display: inline;
@@ -87,7 +87,7 @@ body{
     transition: all 500ms;
 }
 
-.mainbuttons li p:hover{
+.mainbuttons li:hover{
 
     cursor: pointer;
 
