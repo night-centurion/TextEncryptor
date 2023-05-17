@@ -35,14 +35,26 @@ body{
     background-color: rgba(158, 230, 43, 0.356);
 }
 
+.ksbuttons li{
+    display: inline;
+}
+
 .main{
     grid-area:main;
     background-color: rgba(13, 208, 182, 0.316);
 }
 
+.mainbuttons li{
+    display: inline;
+}
+
 .sidefield{
     grid-area: sidefield;
     background-color: rgba(153, 13, 208, 0.316);
+}
+
+.sidebuttons li{
+    display: inline;
 }
 
 .footer{
@@ -83,7 +95,7 @@ body{
 
 }   
        
-@media (min-width:1000px) {
+@media (min-width:900px) {
 
     .contenedorMain {
       /*  grid-template-columns: 50% auto; /* define el ancho de las columnas */
