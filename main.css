@@ -14,25 +14,27 @@ html {
 
 body{
         font-family:"public sans", sans-serif;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         min-height: 100%;
 }
 
-.contenedorMain > * {
+.contenedorMain > * { /*this expresion set an style for each child element */
         box-shadow: -1px 1px 7px 0px rgba(150, 97, 203, 0.527);
         border-radius: 4px;
-        padding: 4px;
+        padding: 4px; /*overrided by each element padding // needed to adjust to each section needs, leaved here for reference  */
         text-align: center;
 }
 
 .header{
         grid-area: header;
         background-color: rgba(13, 32, 208, 0.316);
+        padding: 4px;
 }
 
 .keyselector{
     grid-area: keyselector;
     background-color: rgba(158, 230, 43, 0.356);
+    padding: 4px;
 }
 
 .ksbuttons li{
@@ -40,17 +42,42 @@ body{
 }
 
 .main{
+    position: relative;
     grid-area:main;
     background-color: rgba(13, 208, 182, 0.316);
+    padding: 10px;
+    overflow: hidden;
+   
+}
+
+.mainbuttons{
+
+    margin: 2px;
+    font-display:inherit ;
+    position: absolute;
+    top: 82%;
+    min-width: 100%;
+    
+     
 }
 
 .mainbuttons li{
-    display: inline;
+
+    display: inline-flex;
+    width:auto;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 2px;
+    background-color: rgba(241, 229, 212, 0.753);
+    
+   
 }
 
 .sidefield{
     grid-area: sidefield;
     background-color: rgba(153, 13, 208, 0.316);
+    padding: 10px;
 }
 
 .sidebuttons li{
@@ -60,6 +87,7 @@ body{
 .footer{
     grid-area: footer;
     background-color: rgba(170, 157, 81, 0.493);
+    padding: 4px;
 }
 
 .contenedorMain {
@@ -93,6 +121,8 @@ body{
         ; 
     } 
 
+
+
 }   
        
 @media (min-width:900px) {
@@ -113,6 +143,7 @@ body{
         ; 
     } 
 
+ 
 }   
 
 
