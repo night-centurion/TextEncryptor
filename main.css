@@ -32,7 +32,7 @@ body{
         box-shadow: -1px 1px 7px 0px rgba(150, 97, 203, 0.767);
         border-radius: 4px;
         padding: 4px; /*overrided by each element padding // needed to adjust to each section needs, leaved here for reference  */
-       text-align: center; /*/deprecated, causes buttons aling (ie. center) problems// */ 
+        text-align: center; /*/deprecated, causes buttons aling (ie. center) problems// */ 
 }
 
 
@@ -57,9 +57,9 @@ body{
     grid-area:main;
     background-color: rgba(13, 208, 182, 0.651);
     padding: 10px;
-    overflow: hidden;
+    overflow: hidden; /* prevents buttons from overflowing the container   */
     border: 3px;
-    border-color: black;
+    
     height: 100%;
     width: 100%;
 }
@@ -67,9 +67,9 @@ body{
 .mainbuttons{
 
     margin: 2px;
-    position: relative;
+    position: absolute;
     top: 82%;
-    min-width: 98%; /*if set to 99+% causes the box dims to go over container box width [due container padding] */
+    min-width: 98%; /*if set to 99+% causes the box dims to go over container box width [due container "main" padding] */
     box-sizing: border-box;
         
 }
@@ -77,31 +77,77 @@ body{
 .mainbuttons li{
 
     /*necesita ajustar tamaño y estilo de texto de boton {no esta siendo afectado por la propiedad en body} */
-    display: inline;
- /*   width:auto; */
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 3px;
-    padding: 2px;
-    background-color: rgba(241, 229, 212, 0.747);
+    
+    display: inline-block;
+    width: 40%; /*cannot be auto, it will create unwanted dinamics when zooming while hover */
+    text-align: center;
+    box-sizing:border-box ; /* can also be content-box  */
+    font-size: medium;
+    margin: 10px; /* this afects the spacing between buttons */
+    border: 1px solid  #000000;
+    border-radius: 3px ;  
+    padding: 2px 2px; /* cannot be higer // higer values increase button height  */
+    background-color: rgba(155, 197, 255, 0.945);
     transition: all 500ms;
+    
+    
 }
 
 .mainbuttons li:hover{
 
     cursor: pointer;
-
+    transform: scale(1.1);
 }
 
 .sidefield{
+    position: relative;
     grid-area: sidefield;
     background-color: rgba(153, 13, 208, 0.74);
     padding: 10px;
+
+    overflow: hidden; /* prevents buttons from overflowing the container   */
+    border: 3px;
+    
+    height: 100%;
+    width: 100%;
+}
+
+.sidebuttons {
+
+    
+    margin: 2px;
+    position: absolute;
+    top: 82%;
+    min-width: 98%; /*if set to 99+% causes the box dims to go over container box width [due container "main" padding] */
+    box-sizing: border-box;
+        
+
+
 }
 
 .sidebuttons li{
-    display: inline;
+     /*necesita ajustar tamaño y estilo de texto de boton {no esta siendo afectado por la propiedad en body} */
+    
+     display: inline-block;
+     width: 40%; /*cannot be auto, it will create unwanted dinamics when zooming while hover */
+     text-align: center;
+     box-sizing:border-box ; /* can also be content-box  */
+     font-size: medium;
+     margin: 10px; /* this afects the spacing between buttons */
+     border: 1px solid  #000000;
+     border-radius: 3px ;  
+     padding: 2px 2px; /* cannot be higer // higer values increase button height  */
+     background-color: rgba(155, 197, 255, 0.945);
+     transition: all 500ms;
+     
+ }
+
+ .sidebuttons li:hover{
+
+    cursor: pointer;
+    transform: scale(1.1);
 }
+
 
 .footer{
     grid-area: footer;
