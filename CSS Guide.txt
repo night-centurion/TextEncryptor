@@ -10,6 +10,47 @@ si hay un nombre errado [class, id] CSS no ejecuta lo que esta debajo (pero tamp
 
 
 
-
-
 display: inline-flex; reubica el elemento para que se adapte a los cambios de tamaño del contenedor [y lo alinea horizontalmente (uno al lado del otro)
+
+
+
+
+
+------------------------------------//////----------------------
+
+
+captura imputs con formularios en html
+
+ <form>
+            <input type="text" id="imputbox"> /*
+       
+
+  </form>
+
+
+con "<input type="submit>" dentro de la etiqueta <from> // se crea un botton "submit" que envia todos los datos dentro del formulario, mediante el metodo y a la direccion [modulo] seleccionado
+
+
+La etiqueta que lo representa es <form>.
+
+La etiqueta <input>, para la entrada de datos del usuario.
+
+A crear una etiqueta para el input con la etiqueta <label>.
+
+A conectar un input con su label.
+
+
+	<main>
+    		<form>
+        		<label for="nombreapellido">Nombre y Apellido</label>
+        		<input type="text" id="nombreapellido">
+			<input type="submit" value="Enviar formulario">
+
+     		</from>
+	</main>
+
+Colocamos un id al input y asociamos ese id al atributo for del label
+
+Algunos tipos de input, como text y submit.
+
+Qué label e input por padrón posee el display inline.
