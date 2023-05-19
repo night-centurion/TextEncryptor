@@ -4,6 +4,19 @@ https://www.youtube.com/watch?v=T4t00Hd3qZc
 
 min 7.17 (actual)
 
+
+
+elemntos para el menu de opciones
+
+	+ guardar contraseña para que no sea necesario utilizarla cada vez que se 	encripta/desencripta
+
+	+encryptacion en vivo "sin precionar el boton"
+
+	+Darkmode
+
+	+exportar como [txt] otros?
+
+
 -----------------------------------/////////----------------------------
 
 si hay un nombre errado [class, id] CSS no ejecuta lo que esta debajo (pero tampoco te avisa) lo mismo sucede con comandos errados (por verificar)
@@ -54,3 +67,84 @@ Colocamos un id al input y asociamos ese id al atributo for del label
 Algunos tipos de input, como text y submit.
 
 Qué label e input por padrón posee el display inline.
+
+
+
+
+
+
+
+
+
+header {
+position: relative;
+scale: screen;
+display: flex;
+background-color: rgb(181, 152, 226);
+padding: 10px;
+/*border-radius: 5px;*/
+width: 100%;
+border: 0.5px solid #2b2727ad;
+height: 70px;
+box-sizing: border-box;
+
+
+
+}
+
+.containerLogo {
+
+ position: relative;
+ 
+ left: 1%;
+ height: 45px;
+ width: 45px;
+ display: flex;
+ transition: all 300ms;
+
+}
+
+.logoHeader{
+    transition: all 800ms;
+    position: relative;
+    top: 5%;
+
+}
+
+.logoHeader:hover {
+
+ transform:rotate(60deg) scale(1.3);
+ -ms-transform:rotate(60deg) scale(1.3); /* IE 9 */ 
+ -webkit-transform:rotate(60deg) scale(1.3); /* Opera, Chrome, and Safari */
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
