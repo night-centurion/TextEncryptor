@@ -173,43 +173,9 @@ height: 70%;
      min-width: 100%;
      max-height: 100%;
      border-radius: 4px;
-       
+      
 }
-    
-/*asigned "mainbuttons" class to these, and working to get one vehavior for both fields buttons
-.sidebuttons { /*even thou the buttons on itself have just one config, the ctr need to be adjusted separatedly? */
-/*    
-    margin: 10px;
-    position: sticky;
-    bottom: 3px;
-    min-width: 98%; /*if set to 99+% causes the box dims to go over container box width [due container "main" padding] */
-/*  box-sizing: border-box;
-}
-
-
-.sidebuttons li{ /*necesita ajustar tamaño y estilo de texto de boton {no esta siendo afectado por la propiedad en body} */
-    
-/*  display: inline-block;
-     width: 35%; /*cannot be auto, it will create unwanted dinamics when zooming while hover */
-/*   text-align: center;
-     box-sizing:border-box ; /* can also be content-box  */
-/*   font-size: medium;
-     margin: 10px; /* this afects the spacing between buttons */
-/*   border: 1px solid  #000000;
-     border-radius: 3px ;  
-     padding: 2px 2px; /* cannot be higer // higer values increase button height  */
-/*   background-color: rgba(155, 197, 255, 0.945);
-     transition: all 500ms;
- }
-
- .sidebuttons li:hover{
-
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
- */    
-
+ 
 .footer{
     grid-area: footer;
     background-color: rgba(170, 157, 81, 0.753);
