@@ -41,15 +41,24 @@ body{
         grid-area: header;
         background-color: rgba(13, 32, 208, 0.575);
         padding: 4px;
-        display: inline-block;
-}
+        /* centrado vertical */
+        position: relative;
+        /* centrado horizontal */
+        display: flex;
+        justify-content: center;
+
+    }
 
 .containerLogo{
     
-    margin: 0 auto;
-    width: 25px;
-    height: 25px;
-    left: 3%;
+    width: 36px;
+    height: 36px;
+    /*left: 3%; deprecated in favor of horizontal centering */
+    
+    /* centrado vertical */
+    position: absolute;
+    top: 50%; /*this position the element in the middle, but the element topmost border */
+    margin-top: -18px; /*minus half the heigh so it can be really centered   */
 }
 
 .logoHeader{

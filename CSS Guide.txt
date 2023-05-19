@@ -26,6 +26,33 @@ si hay un nombre errado [class, id] CSS no ejecuta lo que esta debajo (pero tamp
 display: inline-flex; reubica el elemento para que se adapte a los cambios de tamaño del contenedor [y lo alinea horizontalmente (uno al lado del otro)
 
 
+-->
+
+[esta expresion centra al elemento verticalmente, pero centra la parte "superior" el limite superior del elemento
+
+
+position: absolute;
+top: 50%;
+
+para poder centralo realmente toca restar la mitad del alto toal del elemento ejemplo:
+
+
+.contenedor {
+  ...
+  position: relative;
+	}
+
+.hijo{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  /* centrado vertical */
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+
+
+<--
 
 
 
