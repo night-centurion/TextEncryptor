@@ -87,12 +87,11 @@ body{
     position: relative;
     grid-area:main;
     background-color: rgba(13, 208, 182, 0.651);
-    /*padding: 10px;*/
-    overflow: hidden; /* prevents buttons from overflowing the container   */
+    /*padding: 10px;*/  /* prevents buttons from overflowing the container   */
     border: 3px;
+    align-content: center;
+    
     height: 100%;
-    width: 100%;
-    padding: 5px;
 
 }
 
@@ -118,39 +117,47 @@ height: 70%;
 }
 
 
+
 .mainbuttons{
 
-    position: absolute;
-    margin-top: 30px;
-    bottom: 1px;
-    min-width: 98%; /*if set to 99+% causes the box dims to go over container box width [due container "main" padding] */
-    box-sizing: border-box;
-        
-}
-
-.mainbuttons li{
-
     /*necesita ajustar tamaño y estilo de texto de boton {no esta siendo afectado por la propiedad en body} */
-    
-    display: inline-block;
-    width: 35%; /*cannot be auto, it will create unwanted dinamics when zooming while hover */
+   
+    position: sticky;
+ 
+    top: 90%;
+    display:block;
+    width: auto; /*cannot be auto, it will create unwanted dinamics when zooming while hover */
     text-align: center;
-    box-sizing:border-box ; /* can also be content-box  */
+    box-sizing:border-box; /* can also be content-box  */
+    min-width: 90%;
     font-size: medium;
-    margin: 10px; /* this afects the spacing between buttons */
+     /*margin: 10px; this afects the spacing between buttons */
     border: 1px solid  #000000;
     border-radius: 3px ;  
-    padding: 2px 2px; /* cannot be higer // higer values increase button height  */
-    background-color: rgba(155, 197, 255, 0.945);
+     /* padding: 2px 2px;cannot be higer // higer values increase button height  */
+    background-color: rgba(179, 182, 187, 0.278);
     transition: all 500ms;
-    overflow: hidden;
-        
+    /*overflow: hidden;*/
+   
+            
 }
 
-.mainbuttons li:hover{
+.mainbuttons button:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
+
+
+legend{
+
+    font-size: 12px;
+    color: #495057;
+    min-width: 343px;
+    margin: 6px;
+    align-items: center;
+    display: flex;
+}
+
 
 .sidefield{ /* this is needed [even the buttons have just 1 confgi] due the "grid" layout. You need to have "areas" to be added to the grid  */
     position: relative;
