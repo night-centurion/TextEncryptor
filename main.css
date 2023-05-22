@@ -26,11 +26,11 @@ body{
         background-position: center;
         background-repeat: no-repeat;
         background-size:cover;
+        margin: 2px;
         
 }
 
 .contenedorMain > * { /*this expresion set an style for each child element */
-        box-shadow: -1px 1px 7px 0px rgba(150, 97, 203, 0.767);
         border-radius: 4px;
         padding: 4px; /*overrided by each element padding // needed to adjust to each section needs, leaved here for reference  */
         text-align: center; /* may cause buttons aling bugs (ie. center) // */ 
@@ -89,57 +89,72 @@ body{
     background-color: rgba(13, 208, 182, 0.651);
     /*padding: 10px;*/  /* prevents buttons from overflowing the container   */
     border: 3px;
-    align-content: center;
-    
+  /*  align-content: center;*/
     height: 100%;
 
 }
 
+
 p{margin: 4px;}
 
-textarea{
-text-align-last: center;
-padding: 4px;
 
+.topcontainer{
+
+    min-height: 70%;
+    position: relative;
+    display: block;
+    
 }
+
 
 .inputcontainer {
-height: 70%;
-
-}
-
-
-.inputbox{
+  
+    position: absolute;
     min-height: 100%;
     min-width: 100%;
-    max-height: 100%;
-    border-radius: 4px;
+    display: flex;
+   
+}
+
+.inputbox{
+ 
+ min-height: 100%;
+ min-width: 100%;
+ max-height: 100%;
+ border-radius: 4px;
+
 }
 
 
+
+textarea{
+
+text-align: center;
+padding: 4px;
+
+
+}
+
+
+
+button {
+
+    min-width: 30%;
+    margin: 5px;
+    transition: all 500ms;
+    bottom: 10px;
+}
 
 .mainbuttons{
 
     /*necesita ajustar tamaño y estilo de texto de boton {no esta siendo afectado por la propiedad en body} */
-   
     position: sticky;
- 
     top: 90%;
     display:block;
-    width: auto; /*cannot be auto, it will create unwanted dinamics when zooming while hover */
     text-align: center;
     box-sizing:border-box; /* can also be content-box  */
     min-width: 90%;
-    font-size: medium;
-     /*margin: 10px; this afects the spacing between buttons */
-    border: 1px solid  #000000;
-    border-radius: 3px ;  
-     /* padding: 2px 2px;cannot be higer // higer values increase button height  */
-    background-color: rgba(179, 182, 187, 0.278);
-    transition: all 500ms;
-    /*overflow: hidden;*/
-   
-            
+    font-size: medium;        
 }
 
 .mainbuttons button:hover{
@@ -149,32 +164,33 @@ height: 70%;
 
 
 legend{
-
+    top: 1%;
     font-size: 12px;
-    color: #495057;
-    min-width: 343px;
+    color: #121b24;
     margin: 6px;
-    align-items: center;
     display: flex;
 }
 
 
 .sidefield{ /* this is needed [even the buttons have just 1 confgi] due the "grid" layout. You need to have "areas" to be added to the grid  */
-    position: relative;
-    grid-area: sidefield;
-    background-color: rgba(153, 13, 208, 0.74);
-    border: 3px;
-    height: 100%;
-    width: 100%;
-    padding: 5px;
-    overflow: hidden; /* prevents buttons from overflowing the container [mostly bottom // may be drepecated in favor of buttons "sticky" positioning which might prevent them from overflowing anyway] */  
-}
+    
+        position: relative;
+        grid-area:sidefield;
+        background-color: rgba(228, 137, 228, 0.651);
+        /*padding: 10px;*/  /* prevents buttons from overflowing the container   */
+        border: 3px;
+        align-content: center;
+        height: 100%;
+    
+    }
 
 .outputcontainer {
-     height: 70%;
+    position: absolute;
+    display: flex;
+    min-width: 100%;
+    min-height: 100%;
     }
-    
-    
+        
 .outputbox{
      min-height: 100%;
      min-width: 100%;
@@ -217,11 +233,14 @@ legend{
          "main   sidefield" auto /*organizacion y alto de las filas */
          "footer footer" 50px /  /*organizacion y alto de las filas */
          50% auto;  /* luego del "/" se define el ancho de las columnas */
-            
+
+
+   
     } 
 
 
 
+ 
 }   
        
 @media (min-width:900px) {

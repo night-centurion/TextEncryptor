@@ -12,7 +12,6 @@
 
 </head>
 
-
 <body class="contenedorMain">
 
     <header class="header">
@@ -42,61 +41,53 @@
 
     <main class="main">
 
-        <div>
+        <div class="topcontainer">
             <p>Texto a procesar</p>
 
             <form class="inputcontainer"> <!-- this is where the program will receive the user msg -->
-                <!--<input type="text" id="inputbox"> // element deprecated because this created an inline input field [rectangle] // textarea used instead // please check for misspelling [INPUT] vs wrong one [IMPUT]-->
-
                 <textarea class="inputbox" id="textinput" name="entrybox"
                     placeholder="Ingrese su texto aquí"></textarea>
+            </form>
 
         </div>
 
         <div class="mainbuttons">
 
-            <legend id="inputinfo">
-                <img src="images/Info.png" alt="logo pequeño">
-                <p class="infotext">Solo letras minusculas y sin acentos</p>
-            </legend>
+            <div>
+                <legend id="inputinfo">
+                    <img src="images/Info.png" alt="logo pequeño">
+                    <p class="infotext">Solo letras minusculas y sin acentos</p>
+                </legend>
+            </div>
+            
+            <div>
 
-            <button class="encryptbtn" onclick="encrypt">Encriptar</button>
-            <button class="encryptbtn" onclick="unencrypt">Desencriptar</button>
-            <!-- necesito crear un contenedor y mover mainbuttons
-        <ul >
-                <li>
-                    <h2>Encryptar</h2>
-                </li>
-
-                <li>
-                    <h2>Descifrar</h2>
-                </li>
-        </ul> -->
-
+                <button class="encryptbtn" onclick="encrypt">Encriptar</button>
+                <button class="encryptbtn" onclick="unencrypt">Desencriptar</button>
+            </div>
         </div>
     </main>
 
     <aside class="sidefield">
 
-        <p>Texto Procesado</p>
+        <div class="topcontainer">
+            
+                <p>Texto Procesado</p>
 
-        <form class="outputcontainer"> <!-- this is where the program will provide the coded/decoded msg -->
-            <!--<input type="text" id="inputbox"> //element deprecated because this created an inline input field [rectangle] // textarea used instead // please check for misspelling [INPUT] vs wrong one [IMPUT]-->
-            <textarea class="outputbox" id="textoutput" name="outrobox"
-                placeholder="Aquí podra encontrar su texto procesado, utilice los botones de abajo para copiarlo al portapapeles o  borrarlo"></textarea>
+                <form class="outputcontainer"> <!-- this is where the program will provide the coded/decoded msg -->
+                    <!--<input type="text" id="inputbox"> //element deprecated because this created an inline input field [rectangle] // textarea used instead // please check for misspelling [INPUT] vs wrong one [IMPUT]-->
+                    <textarea class="outputbox" id="textoutput" name="outrobox"
+                        placeholder="Aquí podra encontrar su texto procesado, utilice los botones de abajo para copiarlo al portapapeles o  borrarlo"></textarea>
 
-        </form>
+                </form>
 
-        <ul class="mainbuttons">
-            <li>
-                <h2> Copiar </h2>
-            </li>
-
-            <li>
-                <h2>Borrar</h2>
-            </li>
-
-        </ul>
+            
+         </div>
+        
+         <div class="mainbuttons">
+             <button onclick="copy">Copiar</button>
+             <button  onclick="erase">Borrar</button>
+        </div>
 
     </aside>
 
