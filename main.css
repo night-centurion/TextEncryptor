@@ -100,7 +100,7 @@ p{margin: 4px;}
 
 .topcontainer{
 
-    min-height: 70%;
+    min-height: 85%;
     position: relative;
     display: block;
     
@@ -164,7 +164,9 @@ button {
 
 
 legend{
-    top: 1%;
+    position: absolute;
+    bottom: 0;
+    left: 6%;
     font-size: 12px;
     color: #121b24;
     margin: 6px;
