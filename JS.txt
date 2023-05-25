@@ -1,0 +1,42 @@
+
+ ---------------------------/// dep stuff ///--------------------
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
+
+ ---------------------------/// dep stuff ///--------------------
+
+
+¿Qué es JavaScript?
+
+https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+
+
+
+String — Cadena de caracteres
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String#primitivas_string_y_objetos_string
+
+
+5 métodos que debes conocer para manipular textos con JavaScript
+
+
+https://ed.team/blog/5-metodos-que-debes-conocer-para-manipular-textos-con-javascript
+
+
+Métodos útiles con cadenas
+
+https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Useful_string_methods
+
+Plantillas literales (plantillas de cadenas)
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals
+
+
+String — Cadena de caracteres
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String
+
+
+
+Replace multiple strings with multiple other strings
+
+https://stackoverflow.com/questions/15604140/replace-multiple-strings-with-multiple-other-strings
