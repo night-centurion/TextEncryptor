@@ -6,6 +6,8 @@ min 7.17 (actual)
 
 
 
+
+
 elemntos para el menu de opciones
 
 	+ guardar contraseña para que no sea necesario utilizarla cada vez que se 	encripta/desencripta
@@ -15,6 +17,12 @@ elemntos para el menu de opciones
 	+Darkmode
 
 	+exportar como [txt] otros?
+------------------------------------//////////--------------------
+
+Html resources
+
+https://developer.mozilla.org/es/docs/Web/HTML/Content_categories
+
 
 
 -----------------------------------/////////----------------------------
