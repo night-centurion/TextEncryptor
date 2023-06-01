@@ -78,6 +78,8 @@ The <figure> HTML element represents self-contained content, potentially with an
 *
 
 
+
+
 captura imputs con formularios en html
 
  <form>

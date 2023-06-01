@@ -28,7 +28,49 @@ Note: porperties operator is ":" instead of "="
 ------------------------------------//////----------------------
 
 
+<div></div> [in the html file]
+The div element is used mainly for design layout purposes unlike the other content elements you have used so far. Add a div element inside the body element and then move all the other elements inside the new div.
 
+to make the div not take up the entire width of the page. The CSS width property is perfect for this. Create a new type selector in the style sheet that gives your div element a width of 300px.
+
+
+-------------------------------------////////-----------------
+
+---------------------NOTE----- please note diferencess between selectors Properties [general] Classes [created] Id's [created] ----
+
+more on this in here: https://www.w3schools.com/css/css_selectors.asp
+
+--------------------------///////----------------------------
+
+
+Next, you want to center the div horizontally. You can do this by setting its margin-left and margin-right properties to auto. Think of the margin as invisible space around an element. Using these two margin properties, center the div element within the body element.
+
+
+So far you have been using type selectors to style elements. A class selector is defined by a name with a dot directly in front of it, like this:
+
+	.class-name {
+		  	styles
+		    }
+
+
+
+inside the body type selector. Now add a background-image property and set its value to url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg).
+
+			NOTE: url for bkgimage
+
+	body {
+  
+ 	 background-color: burlywood;
+ 	 background-image: url(https://cdn.freecodecamp.org/curriculum/css-		 cafe/beans.jpg)
+  
+		}
+
+
+
+
+
+
+------------------------
 display: inline-flex; reubica el elemento para que se adapte a los cambios de tamaño del contenedor [y lo alinea horizontalmente (uno al lado del otro)
 
 
