@@ -1,0 +1,220 @@
+
+------------------------------------//////////--------------------
+
+Html resources
+
+https://developer.mozilla.org/es/docs/Web/HTML/Content_categories
+
+
+
+-------------------------////-----------------
+
+Note: tags and elements operator is "=" instead of ":"
+Note:Self-closing tags doesn't have the </close> tag
+
+------------------------////-------------------
+
+
+Now you need to link the styles.css file so the styles will be applied again. Nest a self-closing link element in the head element. Give it a rel attribute value stylesheet and an href attribute value of styles.css.
+
+
+<!DOCTYPE html> 
+		[siempre just "html5"]
+<html lang="en"> 
+
+		[set the page languaje]
+
+
+<head> [all config that are not to be "rendered"]
+
+    <meta charset="utf-8" /> 
+
+		[charset to be used -- this one have the puntuation mark]
+
+    <title>Cafe Menu</title> 
+		
+		[txt that is displayed in the browser tab]
+
+
+    <link>    [https://www.w3schools.com/tags/tag_link.asp] <selfclosing>
+
+		
+
+		The <link> tag defines the relationship between the current document 		and an external resource.
+
+		The <link> tag is most often used to link to external style sheets 			or to add a favicon to your website.
+
+		The <link> element is an empty element, it contains attributes only.			
+	-crossorigin	
+		*anonymous use-credentials
+			+Specifies how the element handles cross-origin requests
+
+	-href
+		*URL
+			+Specifies the location of the linked document
+
+
+				<link rel="value">	
+
+				[rel] atribute Required. Specifies the relationship 					between	the current document and the linked document
+	 				ie: 	*icon
+						*stylesheet
+
+	more on:https://www.w3schools.com/tags/att_link_rel.asp
+
+        -------------------------------/////---------------------------
+
+	For the styling of the page to look similar on mobile as it does on a 			desktop or laptop, you need to add a [meta] element with a special content 		attribute.
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	-----------------------------/////--------------------------					
+
+</head>
+
+-*----------------------
+
+The <figure> HTML element represents self-contained content, potentially with an optional caption, which is specified using the <figcaption> element. The figure, its caption, and its contents are referenced as a single unit.
+*
+
+
+captura imputs con formularios en html
+
+ <form>
+            <input type="text" id="imputbox"> /*
+       
+
+  </form>
+
+
+con "<input type="submit>" dentro de la etiqueta <from> // se crea un botton "submit" que envia todos los datos dentro del formulario, mediante el metodo y a la direccion [modulo] seleccionado
+
+
+La etiqueta que lo representa es <form>.
+
+La etiqueta <input>, para la entrada de datos del usuario.
+
+A crear una etiqueta para el input con la etiqueta <label>.
+
+A conectar un input con su label.
+
+
+	<main>
+    		<form>
+        		<label for="nombreapellido">Nombre y Apellido</label>
+        		<input type="text" id="nombreapellido">
+			<input type="submit" value="Enviar formulario">
+
+     		</from>
+	</main>
+
+Colocamos un id al input y asociamos ese id al atributo for del label
+
+Algunos tipos de input, como text y submit.
+
+Qué label e input por padrón posee el display inline.
+
+Label tag is there so when you select the display text [ie Indoor] the option will be selected
+
+-------------------------
+<label></label> label elements are used to help associate the text [in this case [Indoor] for an input element with the input element itself [in this case the radio button]
+
+	<label>
+		<input id="indoor" type="radio" name="indoor-outdoor">Indoor
+	</label>
+
+There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute.
+
+
+	<input id="indoor" type="radio" name="indoor-outdoor">
+	<label for="indoor">Indoor</label>
+
+
+
+-------------------
+Notice that both radio buttons can be selected at the same time. To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value.
+
+Add the name attribute with the value indoor-outdoor to both radio buttons.
+
+
+<label><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+
+<label><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label>
+
+Label tag is there so when you select the display text [ie Indoor] the option will be selected
+
+the "value" atribute lets you assing a value when selected [taking both [name] and[id] atributes. If [value] is not specified it will return "on" as value when selected. (NOT usefull when you have multiple options [with one common [name]) 
+
+
+The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line.
+
+The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.
+
+
+Add a legend element with the text Is your cat an indoor or outdoor cat? above both of the radio buttons. [this add a "caption like" legend to be displayed above (*but within)the radio buttons 
+
+
+	<fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+		<label>
+			<input id="indoor" type="radio" name="indoor-outdoor" 					value="indoor"> Indoor
+		</label>
+		
+		<label>
+			<input id="outdoor" type="radio" name="indoor-outdoor" 					value="outdoor"> Outdoor
+		</label>
+         </fieldset>
+
+Forms commonly use checkboxes [as an alternative of radial buttons] for questions that may have more than one answer. For example, here's a checkbox with the option of tacos: <input type="checkbox"> tacos.
+
+	<input type="checkbox"> Loving
+
+
+There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute.
+
+	<input id="loving" type="checkbox"><label for="loving">Loving</label>
+
+
+Add the [name] attribute with the value personality to the checkbox input element.
+
+While you won't notice this in the browser, doing this makes it easier for a server to process your web form, especially when there are multiple checkboxes.
+
+	<input id="loving" type="checkbox" name="personality"> 
+	<label for="loving">Loving</label>
+
+Like radio buttons, form data for selected checkboxes are name / value attribute pairs. While the value attribute is optional, it's best practice to include it with any checkboxes or radio buttons on the page.
+
+Add a value attribute to each checkbox. For convenience, set each checkbox's value attribute to the same value as its id attribute.
+
+*---
+In order to make a checkbox checked or radio button selected by default, you need to add the checked attribute to it. There's no need to set a value to the checked attribute. Instead, just add the word checked to the input element, making sure there is space between it and other attributes.
+
+
+Languaje is declared in the openning html tag
+
+	<html lang="en">
+
+
+All pages should begin with <!DOCTYPE html>. This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications.
+
+
+	<!DOCTYPE html>
+	<html lang="en">
+
+
+You can set browser behavior by adding self-closing meta elements in the head. Here's an example:
+
+	<meta attribute="value">
+
+Tell the browser to parse the markup into multiple languages by creating a meta element as a child of the head element. Set its [charset] attribute to UTF-8.
+
+Set to the value utf-8 to tell the browser how to encode characters for the page
+
+Note that meta elements are self-closing.
+
+
+
+
+
+
+
