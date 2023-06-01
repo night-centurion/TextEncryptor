@@ -1,8 +1,8 @@
 
- ---------------------------/// dep stuff ///--------------------
+ ---------------------------/// deep stuff ///--------------------
 https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
 
- ---------------------------/// dep stuff ///--------------------
+ ---------------------------/// deep stuff ///--------------------
 
 
 ¿Qué es JavaScript?
@@ -10,6 +10,7 @@ https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Ob
 https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript
 
 
+The name attribute specifies a name for an HTML element. This name attribute can be used to reference the element in a JavaScript. For a <form> element, the name attribute is used as a reference when the data is submitted. For an <iframe> element, the name attribute can be used to target a form submission.
 
 String — Cadena de caracteres
 

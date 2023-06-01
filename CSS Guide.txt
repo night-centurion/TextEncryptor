@@ -4,10 +4,6 @@ https://www.youtube.com/watch?v=T4t00Hd3qZc
 
 min 7.17 (actual)
 
-
-
-
-
 elemntos para el menu de opciones
 
 	+ guardar contraseña para que no sea necesario utilizarla cada vez que se 	encripta/desencripta
@@ -17,17 +13,19 @@ elemntos para el menu de opciones
 	+Darkmode
 
 	+exportar como [txt] otros?
-------------------------------------//////////--------------------
-
-Html resources
-
-https://developer.mozilla.org/es/docs/Web/HTML/Content_categories
-
-
 
 -----------------------------------/////////----------------------------
 
 si hay un nombre errado [class, id] CSS no ejecuta lo que esta debajo (pero tampoco te avisa) lo mismo sucede con comandos errados (por verificar)
+
+
+Now you need to link the styles.css file so the styles will be applied again. Nest a self-closing link element in the head element. Give it a rel attribute value stylesheet and an href attribute value of styles.css.
+
+Note: Link element is self-closing
+
+Note: porperties operator is ":" instead of "="
+
+------------------------------------//////----------------------
 
 
 
@@ -63,54 +61,12 @@ para poder centralo realmente toca restar la mitad del alto toal del elemento ej
 <--
 
 
-
-------------------------------------//////----------------------
-
-
-captura imputs con formularios en html
-
- <form>
-            <input type="text" id="imputbox"> /*
-       
-
-  </form>
-
-
-con "<input type="submit>" dentro de la etiqueta <from> // se crea un botton "submit" que envia todos los datos dentro del formulario, mediante el metodo y a la direccion [modulo] seleccionado
-
-
-La etiqueta que lo representa es <form>.
-
-La etiqueta <input>, para la entrada de datos del usuario.
-
-A crear una etiqueta para el input con la etiqueta <label>.
-
-A conectar un input con su label.
-
-
-	<main>
-    		<form>
-        		<label for="nombreapellido">Nombre y Apellido</label>
-        		<input type="text" id="nombreapellido">
-			<input type="submit" value="Enviar formulario">
-
-     		</from>
-	</main>
-
-Colocamos un id al input y asociamos ese id al atributo for del label
-
-Algunos tipos de input, como text y submit.
-
-Qué label e input por padrón posee el display inline.
+---------*----------------------------------------
 
 
 
 
-
-
-
-
-
+------------------------------------
 header {
 position: relative;
 scale: screen;
@@ -153,15 +109,6 @@ box-sizing: border-box;
  -webkit-transform:rotate(60deg) scale(1.3); /* Opera, Chrome, and Safari */
 
 } 
-
-
-
-
-
-
-
-
-
 
 
 
