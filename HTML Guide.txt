@@ -62,24 +62,66 @@ Now you need to link the styles.css file so the styles will be applied again. Ne
 
 	more on:https://www.w3schools.com/tags/att_link_rel.asp
 
+
+</head>
+
         -------------------------------/////---------------------------
 
 	For the styling of the page to look similar on mobile as it does on a 			desktop or laptop, you need to add a [meta] element with a special content 		attribute.
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	-----------------------------/////--------------------------					
+	-----------------------------/////--------------------------				
 
-</head>
+<article></article>
 
--*----------------------
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article
+
+It’s looking good. Time to start adding some menu items. Add an empty article element under the Coffee heading. It will contain a flavor and price of each coffee you currently offer.
+
+	The <article> HTML element represents a self-contained composition in a 		document, page, application, or site, which is intended to be independently 		distributable or reusable (e.g., in syndication). Examples include: a forum 		post, a magazine or newspaper article, or a blog entry, a product card, a 		user-submitted comment, an interactive widget or gadget, or any other 		independent item of content.
+
+*----------------------
 
 The <figure> HTML element represents self-contained content, potentially with an optional caption, which is specified using the <figcaption> element. The figure, its caption, and its contents are referenced as a single unit.
 *
 
+------------------------------------------------
+
+"Gosth" margins in elements [html structure afects they way elements are rendered]
+
+You could keep trying various percentages for the widths. Instead, use the back space key on your keyboard to move the p element with the class price next to the p element with the class flavor so that they are on the same line in the editor. Make sure there is no space between them.
 
 
+Inside the footer, add a p element. Then, nest an anchor (a) element in the p that links to https://www.freecodecamp.org and has the text Visit our website.
 
+
+ 	<footer>
+        	<p><a href="https://www.freecodecamp.org">Visit our website</a></p>
+	</footer>
+
+
+-----
+The <hr> element represents a paragraph-level thematic break, e.g. a scene change in a story, or a transition to another topic within a section of a reference book.
+
+https://www.w3schools.com/tags/tag_hr.asp
+
+You can use an hr element to display a divider between sections of different content.
+
+First, add an hr element between the p element with the class established and the first section element. Note that hr elements are self closing.
+
+
+Focusing on the menu items and prices, there is a fairly large gap between each line.
+
+Target all the p elements nested in elements with the class named item and set their top and bottom margin to be 5px.
+
+
+You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }.
+
+Change the color of the footer Visit our website link to be grey when a user has visited the link.
+
+
+---------------------------
 captura imputs con formularios en html
 
  <form>
