@@ -25,16 +25,26 @@ Note: Link element is self-closing
 
 Note: porperties operator is ":" instead of "="
 
-------------------------------------//////----------------------
+|---------------------DIV element for design layout purposes----------------------|
 
 
 <div></div> [in the html file]
 The div element is used mainly for design layout purposes unlike the other content elements you have used so far. Add a div element inside the body element and then move all the other elements inside the new div.
 
-to make the div not take up the entire width of the page. The CSS width property is perfect for this. Create a new type selector in the style sheet that gives your div element a width of 300px.
+to make the div not take up the entire width of the page. The CSS width property is perfect for this. Create a new type selector in the style sheet that gives your div element a width of 300px [it also takes % values]
 
 
 -------------------------------------////////-----------------
+
+|------------------------------A function---------------------|
+
+A function is a piece of code that can take an input and perform a specific action. The CSS rgb function accepts values, or arguments, for red, green, and blue, and produces a color:
+
+rgb(red, green, blue);
+Each red, green, and blue value is a number from 0 to 255. 0 means that there's 0% of that color, and is black. 255 means that there's 100% of that color.
+
+In the .one CSS rule, replace the color keyword red with the rgb function. For the rgb function, set the value for red to 255, the value for green to 0, and the value for blue to 0.
+
 
 ---------------------NOTE----- please note diferencess between selectors Properties [general] Classes [created] Id's [created] ----
 
@@ -65,16 +75,22 @@ inside the body type selector. Now add a background-image property and set its v
   
 		}
 
+------------------------ Margin Auto-----[centering elements]-----------------
 
+Your marker would look better if it was centered on the page. An easy way to do that is with the margin shorthand property.
 
+In the last project, you set the margin area of elements separately with properties like margin-top and margin-left. The margin shorthand property makes it easy to set multiple margin areas at the same time.
 
+To center your marker on the page, set its margin property to auto. This sets margin-top, margin-right, margin-bottom, and margin-left all to auto.
 
+While you have three separate marker div elements, they look like one big rectangle. You should add some space between them to make it easier to see each element.
 
-------------------------
+When the shorthand margin property has two values, it sets margin-top and margin-bottom to the first value, and margin-left and margin-right to the second value.
+
+In your .marker CSS rule, set the margin property to 10px [top&bottom] auto [left-right].
+
+---------------
 display: inline-flex; reubica el elemento para que se adapte a los cambios de tamaño del contenedor [y lo alinea horizontalmente (uno al lado del otro)
-
-
--->
 
 [esta expresion centra al elemento verticalmente, pero centra la parte "superior" el limite superior del elemento
 
@@ -103,9 +119,9 @@ para poder centralo realmente toca restar la mitad del alto toal del elemento ej
 <--
 
 
----------*----------------------------------------
+---------COLORS------------------------------------
 
-
+There are two main color models: the additive RGB (red, green, blue) model used in electronic devices, and the subtractive CMYK (cyan, magenta, yellow, black) model used in print.
 
 
 ------------------------------------
