@@ -75,6 +75,50 @@ inside the body type selector. Now add a background-image property and set its v
   
 		}
 
+
+The border-left shorthand property lets you to set the left border's width, style, and color at the same time.
+
+if no color, black is selected by default ****
+check border style diferent values ****
+
+
+Here is the syntax:
+
+border-left: width style color;
+In the .sleeve CSS rule, replace the border-left-width, border-left-style, and border-left-color properties with the border-left shorthand property. The values for the width, style, and color of the left border should be the same.
+
+
+.sleeve {
+  width: 110px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-left-color: black;
+}
+
+with the shorthand:
+
+.sleeve {
+  width: 110px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left: 10px solid black;  
+
+
+Step 88
+Notice that the edges of the shadow are sharp. This is because there is an optional blurRadius value for the box-shadow property:
+
+defaults to 0 if it isn't included. (all right to left) 
+
+box-shadow: offsetX offsetY blurRadius spreadRadius color;
+box-shadow: offsetX offsetY blurRadius color;
+box-shadow: offsetX offsetY color;
+box-shadow: color;
+
+
+------------------------------fomr
+
 ------------------------ Margin Auto-----[centering elements]-----------------
 
 Your marker would look better if it was centered on the page. An easy way to do that is with the margin shorthand property.
@@ -94,7 +138,14 @@ display: inline-flex; reubica el elemento para que se adapte a los cambios de ta
 
 [esta expresion centra al elemento verticalmente, pero centra la parte "superior" el limite superior del elemento
 
+-------------------------------------
 
+The rem unit stands for root em, and is relative to the font size of the html element.
+
+As label elements are inline by default, they are all displayed side by side on the same line, making their text hard to read. To make them appear on separate lines, add display: block to the label element, and add a margin of 0.5rem 0, to separate them from each other.
+
+
+---------------------------------------
 position: absolute;
 top: 50%;
 

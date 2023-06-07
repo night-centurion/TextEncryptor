@@ -7,12 +7,30 @@ https://developer.mozilla.org/es/docs/Web/HTML/Content_categories
 
 
 
--------------------------////-----------------
+------------------------////-------------------\\\\--------------
 
 Note: tags and elements operator is "=" instead of ":"
 Note:Self-closing tags doesn't have the </close> tag
 
-------------------------////-------------------
+------------------------////-------------------\\\\-------------------
+
+
+      --------------------------/\/\/\/\/\/\--------------------------
+
+All pages should begin with <!DOCTYPE html>. This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications.
+
+	<!DOCTYPE html>
+	<html lang="en">
+
+Languaje is declared in the openning html tag <html lang="en">
+
+You can set browser behavior by adding self-closing meta elements in the head. Here's an example: <meta attribute="value"> Note that meta elements are self-closing.
+
+Tell the browser to parse the markup into multiple languages by creating a meta element as a child of the head element. Set its [charset] attribute to UTF-8.
+
+
+
+-------------------------------------////-----------------------------------------
 
 
 Now you need to link the styles.css file so the styles will be applied again. Nest a self-closing link element in the head element. Give it a rel attribute value stylesheet and an href attribute value of styles.css.
@@ -71,7 +89,8 @@ Now you need to link the styles.css file so the styles will be applied again. Ne
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	-----------------------------/////--------------------------				
+
+				
 
 <article></article>
 
@@ -102,6 +121,7 @@ Inside the footer, add a p element. Then, nest an anchor (a) element in the p th
 
 
 -----
+
 The <hr> element represents a paragraph-level thematic break, e.g. a scene change in a story, or a transition to another topic within a section of a reference book.
 
 https://www.w3schools.com/tags/tag_hr.asp
@@ -120,59 +140,332 @@ You change properties of a link when the link has actually been visited by using
 
 Change the color of the footer Visit our website link to be grey when a user has visited the link.
 
+You change properties of a link when the mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue; }.
 
----------------------------
-captura imputs con formularios en html
+Change the color of the footer Visit our website link to be brown when a user hovers over it.
 
- <form>
-            <input type="text" id="imputbox"> /*
-       
+You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }.
 
-  </form>
+Change the color of the footer Visit our website link to be white when clicked on.
 
 
-con "<input type="submit>" dentro de la etiqueta <from> // se crea un botton "submit" que envia todos los datos dentro del formulario, mediante el metodo y a la direccion [modulo] seleccionado
+
+The menu text CAMPER CAFE has a different space from the top than the address's space at the bottom of the menu. This is due to the browser having some default top margin for the h1 element.
+
+Change the top margin of the h1 element to 0 to remove all the top margin.
 
 
-La etiqueta que lo representa es <form>.
+-----------------------captura imputs con formularios en html-----------------
 
-La etiqueta <input>, para la entrada de datos del usuario.
-
-A crear una etiqueta para el input con la etiqueta <label>.
-
-A conectar un input con su label.
+                   |--------------------forms---------------------|
 
 
-	<main>
-    		<form>
-        		<label for="nombreapellido">Nombre y Apellido</label>
-        		<input type="text" id="nombreapellido">
-			<input type="submit" value="Enviar formulario">
+The <form> tag is used to create an HTML form for user input.
 
-     		</from>
-	</main>
+The <form> element can contain one or more of the following form elements:
 
-Colocamos un id al input y asociamos ese id al atributo for del label
+<input>
+<textarea>
+<button>
+<select>
+<option>
+<optgroup>
+<fieldset>
+<label>
+<output>
 
-Algunos tipos de input, como text y submit.
 
-Qué label e input por padrón posee el display inline.
+		 |--------<fomr>-----------Attributes------------------|
 
-Label tag is there so when you select the display text [ie Indoor] the option will be selected
+https://www.w3schools.com/tags/tag_form.asp
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
 
--------------------------
+
+Attribute	Value
+Description
+
+accept-charset	character_set	
+Specifies the character encodings that are to be used for the form submission
+
+action	        URL		
+Specifies where to send the form-data when a form is submitted
+
+autocomplete	on/off		
+Specifies whether a form should have autocomplete on or off
+
+encty.pe	application/x-www-form-urlencoded multipart/form-data text/plain
+Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+
+method		get/post	
+Specifies the HTTP method to use when sending form-data
+
+name		text	
+Specifies the name of a form 
+
+novalidate	novalidate	
+Specifies that the form should not be validated when submitted
+
+rel -|external help license next nofollow noopener noreferrer opener prev search|-Specifies the relationship between a linked resource and the current document
+
+target -| _blank _self _parent _top|-
+Specifies where to display the response that is received after submitting the form
+
+*-*
+
+The <form> tag also supports the Global Attributes in HTML.
+
+Event Attributes
+The <form> tag also supports the Event Attributes in HTML.
+
+*-*
+
+Step 11Passed
+As suggested by the title, you are creating a form. So, after the p element, insert a form with an action attribute targeting https://register-demo.freecodecamp.org.
+
+[action atribute, tels the browser how to handle the "submit" button]
+
+
+The method attribute specifies how to send form-data to the URL specified in the action attribute. The form-data can be sent via a GET request as URL parameters (with method="get") or via a POST request as data in the request body (with method="post").
+
+Set the method attribute to send your form data via a POST request.
+
+
+    <form action='https://register-demo.freecodecamp.org' method="post"></form>
+
+----------------------------
+
+As the form will have three distinct sections, add three fieldset elements within the form element.
+
+-----------------------------------------------
+
+
+	<form method="post" action='https://register-demo.freecodecamp.org'>
+	  <fieldset>
+	  </fieldset>
+
+	  <fieldset>
+	  </fieldset>
+      	
+	  <fieldset>
+      	  </fieldset>
+	</form>
+
+
+The first fieldset will hold name, email, and password fields. 
+
+Start by adding four label elements to the first fieldset.
+
+
+	|-----------------------------------///\\\\/\--------------------------|
+					<label></label>
+	|-----------------------------------///\\\\/\--------------------------|
+
+
+
+****************************************
+* with <label> tag there 	       *
+* when you select the display text     *
+* ie:[Enter Your First Name]           *
+* the option [input field] is selected *		
+****************************************
+
+
+Add the following text to the label elements:
+
+Enter Your First Name:
+Enter Your Last Name:
+Enter Your Email:
+Create a New Password:
+
+
+<form method="post" action='https://register-demo.freecodecamp.org'>
+	<fieldset>
+
+	  <label>Enter Your First Name:</label>
+          <label>Enter Your Last Name:</label>
+          <label>Enter Your Email:</label>
+          <label>Create a New Password:</label>
+
+	</fieldset>
+
+	  <fieldset>
+	  </fieldset>
+      	
+	  <fieldset>
+      	  </fieldset>
+</form>
+
+
+
+
+------------------HTML--------------------------------------------------CSS----------------------
+                                                *
+						*	|The rem unit stands for root em, 									*	|and is relative to the font size of 									*	|the html element.
+Nest an input element within each label.	*
+ Be sure to add each input after the 		*	|As label elements are inline by 		label text, and include 			*					a space after the colon.						*	|default, they are all displayed 									*	|side by side on the same line, 									*	|making their text hard to read. To 									*	|make them appear on separate lines, 									*	|add display: block to the label 									*	|element, and add a margin of 0.5rem 									*	|0, to separate them from each 										*	|other.
+						*
+						*
+---------------------------------------------------------------------------------------------------
+
+inputs are void (selfclosing)
+
+   <fieldset>
+        <label>Enter Your First Name: <input></label>
+        <label>Enter Your Last Name: <input></label>
+        <label>Enter Your Email: <input></label>
+        <label>Create a New Password: <input></label>
+      </fieldset>
+
+Step 18
+Following accessibility best practices, link the input elements and the label elements together using the for attribute.
+
+Use first-name, last-name, email, and new-password as values for the respective id attributes.
+
+
+<fieldset>
+  <label for="first-name">Enter Your First Name: <input id="first-name"/>
+  </label>
+
+  <label for="last-name">Enter Your Last Name: <input id="last-name"/>
+  </label>
+        
+  <label for="email">Enter Your Email: <input id="email"/></label>
+  <label for="new-password">Create a New Password: <input id="new-password" /></label>
+      </fieldset>
+
+**********************/\/\/\//\
 <label></label> label elements are used to help associate the text [in this case [Indoor] for an input element with the input element itself [in this case the radio button]
 
 	<label>
 		<input id="indoor" type="radio" name="indoor-outdoor">Indoor
 	</label>
+**********************/\/\/\//\
+
+
+Step 19
+
+Specifying the type attribute of a form element is important for the browser to know what kind of data it should expect. If the type is not specified, the browser will default to text.
+
+ie:   <input type="text" id="first-name">
+
+Give the first two input elements a type attribute of text, the third a type attribute of email, and the fourth a type attribute of password.
+
+The email type only allows emails with a @ and a . in the domain. The password type obscures the input, and warns if the site does not use HTTPS.
+
+
+At this point, you should be able to submit the form. However, you might notice not much happens.
+
+To make the form more interactive, add the required attribute to the input elements in the first fieldset.
+
+Now, if you try to submit the form without filling in the required fields, you will see an error message.
+
+
+
+	|-----------------------------------///\\\\/\---------------------------------|
+		<input> *selfclosing  synt==<input type="submit" id="XXX" required>
+	|-----------------------------------///\\\\/\---------------------------------|
+
+Algunos tipos de input, como text y submit.
+
+https://www.w3schools.com/tags/tag_input.asp
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+
+
+*********************************************************************************
+*										*
+* The <input> HTML element is used to create interactive controls 		*	
+* for web-based forms in order to accept data from the user; 			*
+* a wide variety of types of input data and control widgets are available, 	*
+* depending on the device and user agent. 					*
+* The <input> element is one of the most powerful and complex in all of HTML 	*
+* due to the sheer number of combinations of input types and attributes.	*
+*										*
+*********************************************************************************
+
+
+
+La etiqueta <input>, para la entrada de datos del usuario.
+
+
+
+con "<input type="submit>" dentro de la etiqueta <from> // se crea un botton "submit" que envia todos los datos dentro del formulario, mediante el metodo y a la direccion [modulo] seleccionado
+
+Crear una etiqueta para el input con la etiqueta <label>.
+Conectar un input con su label.
+Colocamos un id al input y asociamos ese id al atributo for del label
+
+
+
+
+
+Label tag is there so when you select the display text [ie Indoor] the option will be selected
+
+
+Step 20Passed
+
+The first input element with a type of submit is automatically set to submit its nearest parent form element.
+
+To handle the form submission, after the last fieldset element add an input element with the type attribute set to submit and the value attribute set to Submit.
+
+
+<input type="submit value="Submit">
+
+
+
+At this point, you should be able to submit the form. However, you might notice not much happens.
+
+To make the form more interactive, add the required attribute to the input elements in the first fieldset.
+
+Now, if you try to submit the form without filling in the required fields, you will see an error message.
+
+
+
+
+Step 22
+Certain type attribute values come with built-in form validation. For example, type="email" requires that the value be a valid email address.
+
+Add custom validation to the password input element, by adding a minlength attribute with a value of 8. Doing so prevents inputs of less than 8 characters being submitted.
+
+
+			---------------------------------------------------------
+			/// ***** label e input poseen el display inline. **** \\\
+			----------------------------------------------------------
+
+
+
+<form method="post" action='https://register-demo.freecodecamp.org'>
+  <fieldset>
+    <label for="first-name">Enter Your First Name: <input id="first-name" type="text" /></label>
+    <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" /></label>
+    <label for="email">Enter Your Email: <input id="email" type="email" /></label>
+    <label for="new-password">Create a New Password: <input id="new-password" type="password" /></label>
+  </fieldset>
+
+  <fieldset></fieldset>
+
+  <fieldset></fieldset>
+
+  <input type="submit" value="Submit">
+
+</form>
+
+			---------------------------------------------------------
+			/// ***** label e input poseen el display inline. **** \\\
+			----------------------------------------------------------
+
+
+	|-----------------------------------///\\\\/\--------------------------|
+
+
+
+
+-------------------------
 
 There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute.
 
 
 	<input id="indoor" type="radio" name="indoor-outdoor">
 	<label for="indoor">Indoor</label>
-
 
 
 -------------------
@@ -234,27 +527,7 @@ Add a value attribute to each checkbox. For convenience, set each checkbox's val
 In order to make a checkbox checked or radio button selected by default, you need to add the checked attribute to it. There's no need to set a value to the checked attribute. Instead, just add the word checked to the input element, making sure there is space between it and other attributes.
 
 
-Languaje is declared in the openning html tag
 
-	<html lang="en">
-
-
-All pages should begin with <!DOCTYPE html>. This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications.
-
-
-	<!DOCTYPE html>
-	<html lang="en">
-
-
-You can set browser behavior by adding self-closing meta elements in the head. Here's an example:
-
-	<meta attribute="value">
-
-Tell the browser to parse the markup into multiple languages by creating a meta element as a child of the head element. Set its [charset] attribute to UTF-8.
-
-Set to the value utf-8 to tell the browser how to encode characters for the page
-
-Note that meta elements are self-closing.
 
 
 
