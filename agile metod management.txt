@@ -1,0 +1,345 @@
+
+
+Jira Software for agile gestion/develop [scrum y kanban]
+trello kanban 
+
+
+	|---------------------------/\/\/\/\/\/\/\--------------------------|
+	      el enfoque agil esta orientado a generar valor al cliente
+	|---------------------------\/\/\/\/\/\/\/--------------------------|
+
+
+|-------------------------------------------------------|
+| ¿Cuál es el propósito final de Business Agility?	|
+|							|
+| Hacer que la “Respuesta al cambio” se convierta en	| 
+| un diferencial competitivo de la empresa.		|
+|							|
+| A partir del momento en que es construido, ese        |    
+| diferencial competitivo de “Respuesta al cambio”, 	|
+| la empresa tiene la posibilidad de adaptarse 		|
+| a cualquier nueva estrategia que aparezca. 		|
+| Y como vivimos en un ambiente donde todo cambia 	|
+| muy rápidamente, ese diferencial competitivo pasa 	|
+| a ser fundamental para el éxito de la organización.	|
+|-------------------------------------------------------|
+
+
+En esta clase, aprendimos qué es la agilidad empresarial y cómo mapear las burocracias entre áreas y eliminarlas puede generar ganancias para el negocio.
+
+Al eliminar burocracias innecesarias en los procesos, es posible hacer que una organización sea más adaptable a los cambios, porque cuando un cambio es necesario, será menos traumático, ya que habrá menos barreras para el cambio.
+
+Cuando hablamos de agilidad, eso es exactamente lo que queremos, una mejor adaptabilidad a los cambios y no, como las malas interpretaciones que ocurren, hacen que un entorno sea más rápido.
+
+
+
+|---------------------------/\/\/\/\/\/\/\--------------------------|
+			Identificando la complejidad
+|---------------------------\/\/\/\/\/\/\/--------------------------|
+
+* Tipo de informacion que se maneja en la organizacion
+* Temporalidad [vigencia] de la informacion [ciclo de vida de la informacion]
+
+	|****************************************|
+	|a menor ciclo de vida mayor complejidad |
+	|mayor justificcion de estrategia Agil   |
+	******************************************
+
+* Tipo de problemas que enfrenta la organizacion
+	
+	* Problemas intelectuales
+		
+		Respuestas y soluciones "correctas" especificas
+	
+	* Problemas subjetivos
+		
+		- No existe una unica respuesta "valida"
+		- La "validez" o adecuacion de una respuesta se evalua post-		  implementacion
+
+Los problemas se dividen básicamente en dos grupos: Intelectivo o Subjetivo.
+
+Los problemas subjetivos son aquellos que tienen más de una forma de resolverse y solo sabemos si la forma utilizada fue la más correcta después de intentar resolverlo.
+
+a más problemas subjetivos, 
+podemos podemos decir que 
+el entorno que estamos mapeando
+es más complejo.
+
+
+Por otro lado, un problema intelectual es aquel en el que identificamos 
+una única forma posible de resolverlo y esa forma ya está probada y comprobada. 
+
+Esto hace que un entorno 
+que tiene  más procesos 
+y problemas intelectuales 
+sea menos complejo.
+
+	|****************************************|
+	|a menor ciclo de vida mayor complejidad |
+	|mayor justificcion de estrategia Agil   |
+	******************************************
+
+* Estructura organizacional
+
+
+los diferentes tipos de estructuras organizacionales pueden influir en un entorno de agilidad y transformación ágil.
+
+También aprendimos que independientemente de la estructura organizacional, ya sea en un modelo más jerárquico, incluso en un modelo más holocrático, es posible ser ágil. Es suficiente que las interacciones entre las áreas sean ligeras y no afecten la capacidad de adaptación de la organización a los cambios.
+
+
+Cuando buscamos un entorno más ágil para nuestra corporación, uno de los principales desafíos que encontramos es reducir los silos existentes entre las áreas.
+
+Los silos son aquellas áreas que operan de forma independiente entre sí y que muchas veces generan incluso desalineación en el negocio (una compitiendo y no colaborando con la otra).
+
+Aprendimos que para reducir estos silos, necesitamos hacer que estas áreas comiencen a integrar sus procesos co-creándolos y generando un compromiso entre ellos, reduciendo burocracias y mediante metas compartidas.
+
+Finalmente, incluso es posible romper estos silos creando estructuras multidisciplinares, que simplifican las burocracias, hacen que las áreas sean más conocedoras y, en consecuencia, más ágiles.
+
+
+las empresas ágiles tienen un enfoque muy fuerte en generar valor para el negocio.
+
+Una forma de mapear dentro de la organización cuáles son las unidades que generan valor es identificar las unidades de valor más pequeñas, es decir, un grupo mínimo de funciones e iniciativas que trabajando en conjunto pueden hacer que un producto o iniciativa genere un resultado para el negocio.
+
+Este mapeo es importante para encontrar posibles silos existentes y mapear qué puntos de integración entre áreas pueden causar cuellos de botella que impiden que una empresa sea realmente ágil.
+
+
+la forma en que una organización sea ágil dependerá mucho de su contexto.
+
+Precisamente por eso, lo primero que debes hacer es pensar en lo que significa ser ágil para tu empresa.
+
+A partir de ahí, problematizarás, es decir, identificarás los problemas que se pueden resolver en tu organización, y luego buscarás soluciones a estos problemas, conectando estas investigaciones con tu contexto y el mundo real.
+
+Una vez conectado al mundo real, pon en práctica las soluciones. Valida hipótesis, prueba, mira los resultados. Finalmente, comparte estas pruebas y resultados con otros miembros de la organización. Y repite todo este proceso indefinidamente.
+
+
+Realice este curso para Transformación Ágil y:
+Entenda como trabaja un equipo ágil
+Descubra como son formados los diferentes tipos de equipos ágiles
+Aprenda la división de tareas dentro del equipo
+Conozca cuales son las responsabilidades del Product Owner y del Scrum Master
+
+Aulas El equipo ágil
+
+Presentación
+El equipo ágil
+Formando un nuevo equipo
+Equipos Ágiles
+
+La autoorganización
+
+Autoorganización
+Autoorganización
+Auto-Organización en la práctica
+
+Los tipo de equipo ágil
+
+El equipo Scrum
+
+El Product Owner
+
+El Development Team
+
+El Scrum Master
+
+Los Equipos Kanban
+
+--------------------------autoorganizacion ---------------------------------
+
+
+las premisas básicas e imprescindibles para que un equipo se autoorganice es tener:
+
+Objetivo compartido: definir el objetivo en el que todos los miembros del equipo participarán en el desarrollo del proyecto de forma compartida.
+
+Timebox: tiempo necesario para que la autoorganización funcione.
+
+Restricciones: lo que no se debe hacer en el desarrollo del proyecto.
+
+
+				Equpipo Agil
+
+Existen tres tipos de equipos que están presentes en los ambientes ágiles:
+
+Equipos de funcionalidad, componente y jornada del cliente. Intenta identificar algún equipo en el que hayas trabajado que se encaje con alguno de esos 3 tipos de equipos ágiles.
+
+----
+Los 3 principales tipos de equipos ágiles que se auto-organizan:
+
+Funcionalidades: Ese equipo se organiza en torno de una funcionalidad y se preocupa en maximizar el valor en la entrega al usuario para una mejor experiencia posible. El equipo necesita ser multidisciplinario, ya que necesita trabajar en diversos puntos en el código.
+
+Componente: este equipo funciona muy bien para hacer optimizaciones locales; sin embargo, puede ser crítico alterar un componente, ya que puede ser usado en diversas funcionalidades, además de garantizar la sincronización de los componentes que fueron alterados.
+
+Jornada del cliente: este equipo se enfoca en grupos de clientes que poseen comportamiento o necesidades semejantes.
+
+
+	                 ********************************
+	|----------------* SCRUM [forma de equipo agil] *------------------|
+			 ********************************
+
+
+Aprendimos que el equipo de Scrum es un grupo de personas que tienen como objetivo hacer productos excepcionales, y para que eso suceda, son necesarias 3 responsabilidades:
+
+Eficaz (Product Owner): responsable de asegurar que el producto a desarrollar tenga sentido para el mercado. De nada sirve producir el mejor producto si no tienes un cliente para él.
+
+Calidad (Dev. Team): responsable de asegurar que el producto elaborado sea el correcto para ese mercado específico y público objetivo.
+
+Eficiencia (Scrum Master): responsable de asegurar que el equipo opere de la mejor manera posible.
+
+Es decir, en esta clase aprendimos que un equipo ágil se organiza de manera que cuenta con personas que se encargan de asegurar que el producto a desarrollar esté alineado con lo que espera el mercado, que la calidad y tecnologías empleadas estén siendo adecuadas y además por personas responsables de asegurar que el equipo funcione de manera eficiente, sin cuellos de botella.
+
+
+			     ---/\/\/\/\/\---
+			|-----Product Owner-----|
+			     ---\/\/\/\/\/---
+
+
+https://medium.com/@kleer.la/qué-es-el-product-owner-en-el-marco-de-scrum-y-cuáles-son-sus-áreas-de-atención-2bddbb232775#:~:text=Ser%20Product%20Owner%20implica%20mantener,impactan%20en%20los%20resultados%20deseados
+
+
+
+En Scrum, el Product Owner es “la voz del usuario” hacia el interior de la organización, es quien está atento a entender las necesidades de los usuarios. Esta tarea no se puede llevar a cabo efectivamente si no se tiene contacto directo con dichos usuarios para empatizar con sus necesidades, escuchar su feedback y analizar sus comportamientos.
+
+Por esa razón, es el rol más estratégico en organizaciones que desarrollan productos (o servicios) con Scrum. Esto es cierto en la medida que el éxito del producto impacta en el éxito de la organización.
+
+Ser Product Owner implica mantener interacciones de influencia continua con distintos actores clave dentro y fuera de la organización, situándolo en una posición panóptica del sistema y que por lo tanto facilita entender cómo las decisiones impactan en los resultados deseados.
+
+
+
+
+		  ----/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\----
+	       	|-----Development Team--AKA Dev Team-----|
+		  ----\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/----
+
+
+
+3-9 personas
+
+Equipo de Desarrollo está compuesto por personas que pueden ser:
+
+Especialista: alguien con profundos conocimientos sobre cualquier tema.
+
+Generalista: una persona que sabe un poco de todo, pero no tiene un contenido profundo.
+
+En forma de T: alguien con experiencia en algo, pero con conocimientos generales en otras cosas.
+
+
+un equipo de desarrollo es responsable de construir, validar e integrar un incremento de producto.
+
+Además, este equipo está compuesto por personas que no tienen títulos, todos son "miembros" de ese equipo.
+
+Y una de las características más interesantes para que una persona sea parte de un Equipo de Desarrollo o incluso de un equipo ágil es que tiene forma de T, es decir, además de tener al menos una experiencia en la que es especialista, también logra ser generalistas, pudiendo actuar con soltura en diferentes roles y temas.
+
+
+			     ---/\/\/\/\/\---
+			|-----Scrum Master-----|
+			     ---\/\/\/\/\/---
+
+Lider servidor
+Coach
+
+Características del Scrum Master
+
+ la persona en el rol de Scrum Master es responsable de maximizar la eficiencia del Scrum Team, promover y apoyar Scrum y ayudar a mejorar las interacciones existentes.
+
+
+  *-_-*-_-*-_-* Esta persona tiene algunas características principales *-_-*-_-*-_-*
+
+
+Líder Servidor: su principal objetivo es hacer que otras personas tengan éxito.
+
+Coach: persona que puede hacer preguntas que generen reflexión.
+
+Facilitador: puede organizar el trabajo.
+
+Maestro: puede enseñar para el equipo.
+
+Elimina impedimentos.
+
+Experto en Scrum.
+
+Tiene Habilidades Sociales: capacidad para hablar e interactuar con otras personas.
+Agente de cambio: tiene como objetivo mejorar la organización, no solo el equipo scrum.
+
+
+	                 ********************************
+	|----------------* KANBAN[forma de equipo agil] *------------------|
+			 ********************************
+
+
+Kanban es una palabra japonesa que significa “cartel” y consiste en visualizar los flujos de trabajo de una tarea a través de la utilización de recursos gráficos en una estrategia de mejora constante de procesos.
+
+
+Kanban es un tema extremadamente rico dentro de agile, y una forma poderosa de visualizar y limitar el trabajo que está siendo hecho por un equipo.
+
+
+https://marvin-soto.medium.com/la-metodología-kanban-6ab002502831
+
+Lo mejor del método Kanban es su sencillez y su escalabilidad. Cualquier empresa puede beneficiarse de su utilización. Se resume en 9 sencillos principios que son los siguientes:
+
+1. Empieza con lo que haces ahora mismo
+
+No hay una forma concreta de ejecutar el método. Si ya posees un flujo de trabajo determinado, puedes adaptarlo a Kanban. Los cambios no son radicales desde el inicio.
+
+2. Persigue el cambio evolutivo y exponencial
+
+Kanban está diseñado para evitar roces con tu flujo de trabajo actual. Los cambios radicales se desaconsejan por el hecho de que pueden provocar que pierdas el sentido de lo que haces. En cambio, se centra en hacer pequeños cambios, más que en reinventar la rueda.
+
+3. Respeta los procesos actuales, roles y responsabilidades
+
+Tu modelo actual de trabajo puede no ser del todo malo, y eso es lo mejor de Kanban, que reconoce las ventajas de tu modelo y trata de mejorarlas evolutivamente. Es tu misión detectar qué se puede mejorar en cada fase del desarrollo del producto.
+
+4. Fomenta el liderazgo a todos los niveles
+
+La definición de liderazgo ha cambiado mucho en los últimos años. Kanban empodera hasta a la persona que hace una pasantía. No necesitas ser el CEO para aplicarlo. Cada miembro de tu equipo debe tener una mentalidad de mejora continua, tratando cada día de hacerlo mejor y más rápido.
+
+5. Visualiza el workflow
+
+Es fundamental que puedas percibir el flujo de trabajo que tienes delante.
+
+Si eres capaz de ver todo lo que hay por delante, puedes definirlo, y por tanto acotarlo. La forma obvia es utilizar un panel con columnas de tu proceso. No todos los procesos son iguales, así que no todas las columnas tienen por qué parecerse. Define tu proceso con tus stakeholders para tratar de que el Kanban te ayude al máximo. Utiliza post-its, rotulador o software, no hay una norma escrita.
+
+6. Limita el WIP al máximo posible
+
+Seamos sinceros, no es mejor trabajador el que más cosas empieza, sino el que más termina en mejor estado.
+
+No importa que seamos capaces de ponernos con veinte proyectos a la vez si solo sale uno en tiempo y forma. Calcula cuál es el WIP tolerable por tu equipo con un estándar de calidad. Igual al principio es un único proyecto, pero con la mejora de procesos y de calidad puede que cada día seas capaz de sacar más adelante.
+
+7. Gestiona el ciclo y evalúa
+
+Una vez finalizado el primer ciclo Kanban, deberías hacerte preguntas. ¿Todo fluye bien? ¿Hay algún punto en el que nos hemos quedado atorados? No temas cambiar partes del proceso si ayudan.
+
+8. Las políticas del proceso deben ser explícitas
+
+Todos deben conocer a la perfección el proceso y todos deben entenderlo. Si hay un solo miembro del equipo que no comprende alguna parte del proceso, o dicha parte es demasiado compleja, explícaselo o cámbiala. Todos deben saber la misma lengua.
+
+9. Mejora colaborativamente utilizando modelos y el método científico
+
+Comparte tu modelo Kanban con colegas de oficio, personas de confianza u otros profesionales que no sean tu competencia. Discute con ellos. Mide siempre, desde el número de proyectos que salen, la calidad objetiva en cuanto a satisfacción del cliente, y no temas cambiar algo si consideras que puede funcionar. El feedback y la mejora continua es la piedra angular del Kanban, así que no dudes en preguntar y en cambiar.
+
+------------------------------------------************------------------------------
+
+
+[00:00] Bueno, felicidades por haber completado el curso de organización de equipos ágiles. Vamos a dar una repasada rapidita sobre todo lo que hemos aprendido a lo largo de estas ocho clases.
+
+[00:13] Entonces, en la primera clase comenzamos hablando sobre el equipo ágil, cuál es la diferencia entre un equipo en cascada o no ágil y un equipo ágil y qué problemas que ese enfoque multidisciplinar que tiene el equipo ágil ayuda a resolver.
+
+Vimos los detalles, dijimos que es un grupo de personas que tiene todos los conocimientos necesarios para elaborar el producto, mencionamos también la pirámide Patrick donde mapeamos qué problemas como falta de confianza, falta de compromiso, huir de responsabilidades, la desatención a los resultados terminan siendo mitigados cuando trabajamos con un equipo multidisciplinario.
+
+En la segunda clase pasamos a la auto-organización, vino el ejemplo de las hormigas, que tienen un objetivo común y percibimos que, además del objetivo compartido, tener un time box y un conjunto de restricciones ayuda a que tengamos condiciones para que los equipos se auto-organicen.
+
+Hablé también del ejemplo clásico de Bill Gates con su Fundación, donde él se enfoca bastante en el problema para crear este objetivo compartido y da las restricciones, proporcionando un ambiente donde la innovación también sucede de una forma más natural.
+
+Después de eso pasamos a los tipos de equipo, equipos que son divididos por funcionalidad, equipos que son divididos por componente, en donde ellos pueden trabajar en la misma funcionalidad. Sin embargo, en componentes separados, por lo que necesitan evaluar el impacto al momento de hacer el merge del código.
+
+Y por último, los equipos que son enfocados en la jornada del cliente, aquellos que se enfocan en grupos específicos de cliente. Y el camino o viaje que ellos hacen desde el momento que tienen el primer contacto con la aplicación hasta el momento que dejan de tenerla.
+
+Después pasamos rápido para hablar sobre los tres papeles del equipo Scrum y hablamos un poco del enfoque que cada uno tiene como eficacia, eficiencia y calidad. Luego hablamos sobre el rol del product owner, cómo es que él opera en tres niveles: estratégico, táctico y operacional, con el objetivo de maximizar el valor de negocio.
+
+Y también vimos que trabaja en tres sprints: el actual, el anterior y el próximo. Y que para que el product owner pueda ser un buen product owner, necesita ser product y owner. De ahí hablamos sobre el equipo de desarrollo que según Scrum debe tener de tres a nueve personas. Cuanto más personas se tienen, más complicado de ver los relacionamientos que ocurren.
+
+Vimos también el término del perfil T, que es tener una habilidad principal y otras adyacentes y tener personas con perfiles T complementarios para que podamos promover el aprendizaje dentro del equipo. Hablamos también del truck factor, que está relacionado con el perfil T para evitar tener alguna necesidad en la mano de una única persona del equipo.
+
+De ahí hablamos de las características del Scrum master: un líder servidor, profesor, responsable por remover los obstáculos y otras características que pueden ser resumidas en todo aquello que es necesario para que él sea un agente de cambio.
+
+Y terminamos hablando de las características de un equipo Kanban, cuáles son las que tiene y que no está lejos de equipos tradicionales. El tema de visualizar el flujo de trabajo y limitar el trabajo en progreso para favorecer la multidisciplinariedad dentro de esos equipos, y además los papeles opcionales que no son obligatorios para poder empezar fácilmente el cambio, comenzando con aquello que ya tenemos a la mano.
+
+

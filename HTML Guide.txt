@@ -175,6 +175,8 @@ The <form> element can contain one or more of the following form elements:
 <output>
 
 
+
+
 		 |--------<fomr>-----------Attributes------------------|
 
 https://www.w3schools.com/tags/tag_form.asp
@@ -232,11 +234,43 @@ Set the method attribute to send your form data via a POST request.
 
     <form action='https://register-demo.freecodecamp.org' method="post"></form>
 
-----------------------------
+--------------------------------------------/\/\/\/\/\//\/\----------------------------------------
+					    fieldset element
+--------------------------------------------\/\/\/\/\/\//\/---------------------------------------
+The fieldset element is used to group 
+related inputs and labels together in a web form. 
+
+
+
+	|------------------------------\/\/\/\//\/\/\---------------------------|		
+			fieldset elements are block-level elements
+			 meaning that they appear on a new line.
+	|------------------------------/////\\\\\---------------------------|
+
+
+
+/----------------------------------\
+\ The legend element acts as a 	   /
+/ caption for the content in the   \
+\ fieldset element. It gives users /
+/ context about what they should   \
+\ enter into that part of the form /
+/----------------------------------\
+
+
+
+	|------------------------------\/\/\/\//\/\/\---------------------------|		
+			fieldset elements are block-level elements
+			 meaning that they appear on a new line.
+	|------------------------------/\/\//\/\/\/\/---------------------------|
+
+
+
+
 
 As the form will have three distinct sections, add three fieldset elements within the form element.
 
------------------------------------------------
+--------------------------------------------\/\/\/\//\/\/\/--------------------------------------
 
 
 	<form method="post" action='https://register-demo.freecodecamp.org'>
@@ -256,9 +290,9 @@ The first fieldset will hold name, email, and password fields.
 Start by adding four label elements to the first fieldset.
 
 
-	|-----------------------------------///\\\\/\--------------------------|
-					<label></label>
-	|-----------------------------------///\\\\/\--------------------------|
+	|-----------------------------------////\\\\----------------------------|
+					 <label></label>
+	|-----------------------------------////\\\\----------------------------|
 
 
 
@@ -361,9 +395,9 @@ Now, if you try to submit the form without filling in the required fields, you w
 
 
 
-	|-----------------------------------///\\\\/\---------------------------------|
+	|-----------------------------------////\\\\---------------------------------|
 		<input> *selfclosing  synt==<input type="submit" id="XXX" required>
-	|-----------------------------------///\\\\/\---------------------------------|
+	|-----------------------------------////\\\\---------------------------------|
 
 Algunos tipos de input, como text y submit.
 
@@ -420,11 +454,49 @@ Now, if you try to submit the form without filling in the required fields, you w
 
 
 
+				----------------------------------
+----------------------------------Step 22 ------input validation---------------------------
+				----------------------------------
 
-Step 22
 Certain type attribute values come with built-in form validation. For example, type="email" requires that the value be a valid email address.
 
-Add custom validation to the password input element, by adding a minlength attribute with a value of 8. Doing so prevents inputs of less than 8 characters being submitted.
+Add custom validation to the password input element, by adding a [minlength] attribute with a value of 8. Doing so prevents inputs of less than 8 characters being submitted.
+
+	**********************************************
+	* pattern----HTML <input> pattern Attribute  *
+	**********************************************
+
+	https://www.w3schools.com/tags/att_input_pattern.asp
+
+	**************Definition and Usage**************
+	*					       *	
+	* The pattern attribute specifies a regular    *
+	* expression that the <input> element's        *         Syxtax: <input pattern="regexp">
+	* value is checked against on form submission. *
+	*					       *	
+	************************************************
+
+Note: The pattern attribute works with the following input types: text, date, search, url, tel, email, and password.
+
+Tip: Use the global title attribute to describe the pattern to help the user.
+
+
+Tip: Learn more about regular expressions in our JavaScript tutorial.
+
+
+********JavaScript Regular Expressions********
+*					     *      	
+* https://www.w3schools.com/js/js_regexp.asp *
+*					     *	
+**********************************************
+
+
+Step 23Passed
+With type="password" you can use the pattern attribute to define a regular expression that the password must match to be considered valid.
+
+Add a pattern attribute to the password input element to require the input match: [a-z0-5]{8,}
+
+The above is a regular expression which matches eight or more lowercase letters or the digits 0 to 5. Then, remove the minlength attribute, and try it out.
 
 
 			---------------------------------------------------------
@@ -454,39 +526,142 @@ Add custom validation to the password input element, by adding a minlength attri
 			----------------------------------------------------------
 
 
-	|-----------------------------------///\\\\/\--------------------------|
+		|-----------------------------///\\\--------------------------|
+		|-----------------------------///\\\--------------------------|
+
+-----------------------------------------////\\\-------------------------------------------------
+
+Let us go to the next part of the registration form. This section will ask for the type of account the user is opening, and will confirm the user has read the terms and conditions.
 
 
+Users will be allowed to choose either a Personal Account or Business Account.
+To do this, within each of the first two label elements, add one input element with type="radio".
+
+				------------------------------------
+-----------------------------------input element with type="radio"---------------------------------
+				------------------------------------
 
 
--------------------------
+There's another way to associate an input element's 
+text with the element itself. You can nest the text 
+within a label element and add a for attribute with 
+the same value as the input element's id attribute.
 
-There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute.
+
+---------------------
+within each of the first two label elements, add one input element with type="radio".
+
+ <fieldset>
+   <label>
+     <input type="radio" />
+   </label>
+   <label>
+     <input type="radio" />
+   </label>
+   <label></label>
+ </fieldset>
+
+Step 26
+For the terms and conditions, add an input with a type of checkbox to the third label element. Make this input element required because users should not sign up without reading the terms and conditions.
 
 
-	<input id="indoor" type="radio" name="indoor-outdoor">
-	<label for="indoor">Indoor</label>
+        <label>
+          <input type="checkbox" required>
+        </label>
+
+Step 27
+Within each corresponding label element, and immediately after the input element, add a space and add the following text:
+
+Personal Account
+Business Account
+I accept the terms and conditions
+
+ <fieldset>
+   <label>
+     <input type="radio" /> Personal Account 
+   </label>
+   <label>
+     <input type="radio" /> Business Account 
+   </label>
+   <label>
+     <input type="checkbox" required /> I accept the terms and conditions
+   </label>
+ </fieldset>
 
 
 -------------------
 Notice that both radio buttons can be selected at the same time. To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value.
+-------------------
 
-Add the name attribute with the value indoor-outdoor to both radio buttons.
 
 
-<label><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
 
-<label><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label>
+	|-----------------------------------////\\\\---------------------------------|
+          name attribute synt==<input type="submit" id="XXX" name="xxx" required>
+	|-----------------------------------////\\\\---------------------------------|
 
-Label tag is there so when you select the display text [ie Indoor] the option will be selected
+
+You only want one radio input to be selectable at a time. However, the form does not know the radio inputs are related.
+
+To relate the radio inputs, give them the same name attribute with a value of account-type. Now, it is not possible to select both radio inputs at the same time.
+
+***********************************************************
+* Label tag is there so when you select the display 	  *
+* text [ie bussiness account] the option will be selected *
+***********************************************************
+
 
 the "value" atribute lets you assing a value when selected [taking both [name] and[id] atributes. If [value] is not specified it will return "on" as value when selected. (NOT usefull when you have multiple options [with one common [name]) 
 
 
-The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line.
+name="account-type"
 
-The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.
 
+<fieldset>
+   <label>
+	<input type="radio" name="account-type" /> Personal Account
+   </label>
+   <label>
+	<input type="radio" name="account-type" /> Business Account
+   </label>
+   <label>
+	<input type="checkbox" required /> I accept the terms and conditions
+   </label>
+</fieldset>
+
+
+
+
+Step 31
+Moving on to the final fieldset. What if you wanted to allow a user to upload a profile picture?
+
+Well, the input type file allows just that. Add a label with the text Upload a profile picture: , and nest an input accepting a file upload.
+
+
+
+
+
+				------------------------------------
+------------------------<input type="file" id="img" name="img" accept="image/*">------------------------
+				------------------------------------
+
+
+<input type="file">
+
+HTML <input> accept Attribute
+
+Definition and Usage
+The accept attribute specifies a filter for what file types the user can pick from the file input dialog box.
+
+Note: The accept attribute can only be used with <input type="file">.
+
+Tip: Do not use this attribute as a validation tool. File uploads should be validated on the server.
+
+
+
+
+
+---------------------------------------/////\\\\\-----------------------------
 
 Add a legend element with the text Is your cat an indoor or outdoor cat? above both of the radio buttons. [this add a "caption like" legend to be displayed above (*but within)the radio buttons 
 
