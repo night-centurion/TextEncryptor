@@ -1020,12 +1020,94 @@ as ===> "Note: If the value attribute is not specified, the content will be pass
 			<option value="4">Other</option>
 		</select>
 
+
+
+	|-----------------------------------////\\\\----------------------------|
+				text area element <textarea></textarea>
+	|-----------------------------------////\\\\----------------------------|
+
+
+https://www.w3schools.com/tags/tag_textarea.asp
+
+
 Step 37
 
 The textarea element acts like an input element of type text, but comes with the added benefit of being able to receive multi-line text, and an initial number of text rows and columns.
 
 
 Users will be able to register with a bio. Add a label with the text Provide a bio: at the end of the fieldset. Add a textarea element inside the label element. Note that the textarea requires a closing tag.
+
+
+Definition and Usage
+The <textarea> tag defines a multi-line text input control.
+
+The <textarea> element is often used in a form, to collect user inputs like comments or reviews.
+
+A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).
+
+The size of a text area is specified by the cols and rows attributes (or with CSS).
+
+The name attribute is needed to reference the form data after the form is submitted (if you omit the name attribute, no data from the text area will be submitted).
+
+The id attribute is needed to associate the text area with a label. 
+
+Tip: Always add the <label> tag for best accessibility practices!
+
+Example
+A multi-line text input control (text area):
+
+<label for="w3review">Review of W3Schools:</label>
+
+<textarea id="w3review" name="w3review" rows="4" cols="50">
+At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+</textarea>
+
+
+
+
+Step 39
+The textarea appears too small. To give it an initial size, you can add the rows and cols attributes.
+
+Add an initial size of 3 rows and 30 columns.
+
+
+Step 40
+To give Campers an idea of what to put in their bio, the placeholder attribute is used. The placeholder accepts a text value, which is displayed until the user starts typing.
+
+Give the textarea a placeholder of I like coding on the beach....
+
+
+Step 41
+With form submissions, it is useful, and good practice, to provide each submittable element with a name attribute. This attribute is used to identify the element in the form submission.
+
+Give each submittable element a unique name attribute of your choosing, except for the two radio inputs.
+
+
+********************************
+HTML <textarea> name Attribute *
+********************************
+
+Definition and Usage
+The name attribute specifies a name for a text area.
+
+The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.
+
+
+Step 41
+With form submissions, it is useful, and good practice, to provide each submittable element with a name attribute. This attribute is used to identify the element in the form submission.
+
+Give each submittable element a unique name attribute of your choosing, except for the two radio inputs.
+
+
+Step 42
+The HTML for the registration form is finished. Now, you can spruce it up a bit.
+
+Start by changing the font to Tahoma, and the font size to 16px in the body.
+
+
+======================================>>>>>>>>>>> Jump to CSS ========>>>>>>>>>>>>>
+======================================>>>>>>>>>>> Jump to CSS ========>>>>>>>>>>>>>
+======================================>>>>>>>>>>> Jump to CSS ========>>>>>>>>>>>>>
 
 
 

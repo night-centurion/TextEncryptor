@@ -145,6 +145,23 @@ The rem unit stands for root em, and is relative to the font size of the html el
 As label elements are inline by default, they are all displayed side by side on the same line, making their text hard to read. To make them appear on separate lines, add display: block to the label element, and add a margin of 0.5rem 0, to separate them from each other.
 
 
+Step 44
+Center the form element, by giving it a margin of 0 auto. Then, fix its size to a maximum width of 500px, and a minimum width of 300px. In between that range, allow it to have a width of 60vw.
+
+
+form{
+margin:0 auto;
+max-width:500px;
+width:60vw;
+min-width:300px;
+}
+
+
+
+
+
+
+
 ---------------------------------------
 position: absolute;
 top: 50%;
@@ -219,7 +236,8 @@ box-sizing: border-box;
 
 } 
 
-
+--------------------------------------
+--------------------------------------
 
 
 
