@@ -23,7 +23,14 @@ Now you need to link the styles.css file so the styles will be applied again. Ne
 
 Note: Link element is self-closing
 
-Note: porperties operator is ":" instead of "="
+Note: porperties operator is ":" instead of "=" thats for setting up the value
+[DO NOT USE ":" in the declaration]
+
+ie:     input, textarea, select {
+	width:100%;
+	margin: 10px 0 0 0;  
+}
+	
 
 |---------------------DIV element for design layout purposes----------------------|
 
@@ -46,9 +53,15 @@ Each red, green, and blue value is a number from 0 to 255. 0 means that there's 
 In the .one CSS rule, replace the color keyword red with the rgb function. For the rgb function, set the value for red to 255, the value for green to 0, and the value for blue to 0.
 
 
----------------------NOTE----- please note diferencess between selectors Properties [general] Classes [created] Id's [created] ----
+-------NOTE----- -------------------------------------------------
+please note diferencess between: 				 -
+selectors Properties [general] 					 -	
+Classes [created] 						 -
+Id's [created]							 -
+								 -
+more about this: https://www.w3schools.com/css/css_selectors.asp -
+------------------------------------------------------------------
 
-more on this in here: https://www.w3schools.com/css/css_selectors.asp
 
 --------------------------///////----------------------------
 
@@ -146,6 +159,7 @@ As label elements are inline by default, they are all displayed side by side on 
 
 
 Step 44
+
 Center the form element, by giving it a margin of 0 auto. Then, fix its size to a maximum width of 500px, and a minimum width of 300px. In between that range, allow it to have a width of 60vw.
 
 
@@ -155,6 +169,209 @@ max-width:500px;
 width:60vw;
 min-width:300px;
 }
+
+Step 47
+The border of the last fieldset element looks a little out of place. You can select the last element of a specific type using the last-of-type CSS pseudo-class, like this:
+
+p:last-of-type { }
+That will select the last p element. Create a new selector that targets the last fieldset element and set its border-bottom to none.
+
+
+fieldset:last-of-type{
+  border-bottom:none;
+}
+
+
+Step 48
+It would be nicer to have the label text appear above the form elements.
+
+Select all input, textarea, and select elements, and make them take up the full width of their parent elements.
+
+Also, add 10px of margin to the top of the selected elements. Set the other margins to 0.
+
+
+
+Step 48
+It would be nicer to have the label text appear above the form elements.
+
+Select all input, textarea, and select elements, and make them take up the full width of their parent elements.
+
+Also, add 10px of margin to the top of the selected elements. Set the other margins to 0.
+
+
+	input, textarea, select {
+				width:100%;
+				margin: 10px 0 0 0;  
+				}
+
+
+======================================>>>>>>>>>>> Jump to HTML ========>>>>>>>>>>>>>
+======================================>>>>>>>>>>> Jump to HTML ========>>>>>>>>>>>>>
+======================================>>>>>>>>>>> Jump to HTML ========>>>>>>>>>>>>>
+Step 49
+
+For the second fieldset, you want the input and label text to appear on the same line.
+Start, by giving the input elements in the second fieldset a class of inline.
+
+======================================>>>>>>>>>>> Jump to HTML ========>>>>>>>>>>>>>
+======================================>>>>>>>>>>> Jump to HTML ========>>>>>>>>>>>>>
+======================================>>>>>>>>>>> Jump to HTML ========>>>>>>>>>>>>>
+
+
+
+<<<<<<==========Jump from HTML====================================================
+<<<<<<==========Jump from HTML====================================================
+<<<<<<==========Jump from HTML====================================================
+
+Step 50
+Select only the .inline elements, and give them width of unset. This will remove the earlier rule which set all the input elements to width: 100%.
+
+
+<<<<<<==========Jump from HTML====================================================
+<<<<<<==========Jump from HTML====================================================
+<<<<<<==========Jump from HTML====================================================
+
+due how styles are applied, the [.inline] class override the element [fieldset] style
+
+******************
+*id>class>element*
+******************
+
+.inline {
+  width:unset;
+}
+
+Step 51Passed
+Add some space between the .inline elements and the label text, by giving a right margin of 0.5em. Also, set all the other margin to 0.
+
+Margin - Shorthand Property
+To shorten the code, it is possible to specify all the margin properties in one property.
+
+The margin property is a shorthand property for the following individual margin properties:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+====>
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+
+}
+
+Step 52
+If you look close enough, you will notice the .inline elements are too high on the line.
+
+To combat this, set the vertical-align property to middle.
+
+
+Step 53
+To make the input and textarea elements blend in with the background theme, set their background-color to #0a0a23. Then, give them a 1px, solid border with a color of #0a0a23.
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+}
+
+
+tep 54
+Currently, if you type in the input or textarea elements, you will not be able to see the text [due text color]
+
+Also, their height is too small to be easy to use.
+
+Fix this, by setting the color to #ffffff, and setting their min-height to 2em.
+
+
+
+Step 56
+To style the submit button, you can use an [attribute selector], which selects an element based on the given attribute value. Here is an example:
+
+input[name="password"]
+The above selects input elements with a name attribute value of password.
+
+Now, use the attribute selector to style the submit button with a display of block, and a width of 60%.
+
+	----------------------------\/\/\//\/\/\-------------------------
+	- 			attribute selector			-
+	----------------------------/\/\//\/\/\/-------------------------
+
+https://www.w3schools.com/css/css_attribute_selectors.asp
+
+Style HTML Elements With Specific Attributes
+It is possible to style HTML elements that have specific attributes or attribute values.
+
+CSS [attribute] Selector
+The [attribute] selector is used to select elements with a specified attribute.
+
+The following example selects all <a> elements with a target attribute:
+
+
+Example
+a[target] {
+  background-color: yellow;
+}
+
+
+CSS [attribute="value"] Selector
+The [attribute="value"] selector is used to select elements with a specified attribute and value.
+
+The following example selects all <a> elements with a target="_blank" attribute:
+
+Example
+a[target="_blank"] {
+  background-color: yellow;
+}
+
+
+CSS [attribute~="value"] Selector
+The [attribute~="value"] selector is used to select elements with an attribute value containing a specified word.
+
+The following example selects all elements with a title attribute that contains a space-separated list of words, one of which is "flower":
+
+Example
+[title~="flower"] {
+  border: 5px solid yellow;
+}
+
+The example above will match elements with title="flower", title="summer flower", and title="flower new", but not title="my-flower" or title="flowers".
+
+
+	----------------------------\/\/\//\/\/\-------------------------
+	- 			attribute selector			-
+	----------------------------/\/\//\/\/\/-------------------------
+
+
+Step 56
+To style the submit button, you can use an [attribute selector], which selects an element based on the given attribute value. Here is an example:
+
+input[name="password"]
+The above selects input elements with a name attribute value of password.
+
+Now, use the attribute selector to style the submit button with a display of block, and a width of 60%.
+
+
+input[type="submit"]{
+  display:block;
+  width:60%;
+}
+
+
+Step 57
+With a display of block the submit button sits flush against the left edge of its parent.
+
+Use the same technique used to center the form to center the submit button. [  margin: 0 auto; ]
+
+
+
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+
 
 
 

@@ -1112,6 +1112,55 @@ Start by changing the font to Tahoma, and the font size to 16px in the body.
 
 
 
+<<<<<<==========Jump from CSS ====================================================
+<<<<<<==========Jump from CSS ====================================================
+<<<<<<==========Jump from CSS ====================================================
 
 
 
+
+Step 49
+For the second fieldset, you want the input and label text to appear on the same line.
+
+Start, by giving the input elements in the second fieldset a class of inline.
+
+
+     <fieldset>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+
+======================================>>>>>>>>>>> Jump to CSS ========>>>>>>>>>>>>>
+======================================>>>>>>>>>>> Jump to CSS ========>>>>>>>>>>>>>
+======================================>>>>>>>>>>> Jump to CSS ========>>>>>>>>>>>>>
+
+Step 50
+Select only the .inline elements, and give them width of unset. This will remove the earlier rule which set all the input elements to width: 100%.
+
+======================================>>>>>>>>>>> Jump to CSS ========>>>>>>>>>>>>>
+======================================>>>>>>>>>>> Jump to CSS ========>>>>>>>>>>>>>
+======================================>>>>>>>>>>> Jump to CSS ========>>>>>>>>>>>>>
