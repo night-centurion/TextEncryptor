@@ -365,13 +365,114 @@ With a display of block the submit button sits flush against the left edge of it
 Use the same technique used to center the form to center the submit button. [  margin: 0 auto; ]
 
 
-
-
 input[type="submit"] {
   display: block;
   width: 60%;
   margin: 0 auto;
 
+
+Step 61
+Most browsers inject their own default CSS properties and values for different elements. If you look closely, you might be able to notice the file input is smaller than the other text input elements. By default, a padding of 1px 2px is given to input elements you can type in.
+
+Using another attribute selector, style the input with a type of file to be the same padding as the other input elements.
+
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+
+-----------------------------------------canvas------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rothko Painting</title>
+    <link href="./styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="frame">
+      <div class="canvas">
+        <div class="one"></div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+CSS--------------
+
+canvas {
+  width: 500px;
+  height: 600px;
+  background-color: #4d0f00;
+
+}
+
+.frame {
+  border: 50px solid black;
+  width: 500px;
+  padding: 50px;
+  margin: 20px auto;
+}
+
+.one {
+  width: 425px;
+  height: 150px;
+  background-color: #efb762;
+  margin: 20px auto;
+}
+
+Now .one is centered horizontally, but its top margin is pushing past the canvas and onto the frame's border, shifting the entire canvas down 20 pixels.
+
+Add padding of 1px to the .canvas element to give the .one element something solid to push off of.
+
+
+canvas {
+  width: 500px;
+  height: 600px;
+  background-color: #4d0f00;
+  padding: 1px;
+
+}
+
+
+
+Step 22
+Adding 1 pixel of padding to the top, bottom, left, and right of the canvas changed its dimensions to 502 pixels x 602 pixels.
+
+Replace the padding property with overflow set to hidden - changing the canvas back to its original dimensions.
+
+
+
+
+
+
+
+
+
+********************************************
+* please note the syntax for declaring 	   *
+* the element/class is the same as in HTML *
+********************************************
+
+Step 62
+Speaking of padding, the submit button is sitting at the bottom of the form element. Add 2em of padding only to the bottom of the form.
 
 
 
@@ -456,10 +557,82 @@ box-sizing: border-box;
 --------------------------------------
 --------------------------------------
 
+complete style
 
 
 
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
 
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
 
 
 
