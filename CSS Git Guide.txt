@@ -636,14 +636,159 @@ input[type="file"] {
 
 
 
+-----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+Step 33
+It's helpful to have your margins push in one direction.
+
+In this case, the bottom margin of the .one element pushes .two down 20 pixels.
+
+In the .two selector, use margin shorthand property to set top margin to 0, horizontal margin to auto, and bottom margin to 20px. This will remove its top margin, horizontally center it, and set its bottom margin to 20 pixels.
+
+
+.canvas {
+  width: 500px;
+  height: 600px;
+  background-color: #4d0f00;
+  overflow: hidden;
+}
+
+.frame {
+  border: 50px solid black;
+  width: 500px;
+  padding: 50px;
+  margin: 20px auto;
+}
+
+.one {
+  width: 425px;
+  height: 150px;
+  background-color: #efb762;
+  margin: 20px auto;
+}
+
+.two {
+  width: 475px;
+  height: 200px;
+  background-color: #8f0401;
+  margin: 0 auto 20px;
+}
+
+.three {
+  width: 91%;
+  height: 28%;
+  background-color: #b20403;
+  margin: auto;
+}
 
 
 
 
+Step 33
+It's helpful to have your margins push in one direction.
+
+In this case, the bottom margin of the .one element pushes .two down 20 pixels.
+
+In the .two selector, use margin shorthand property to set top margin to 0, horizontal margin to auto, and bottom margin to 20px. This will remove its top margin, horizontally center it, and set its bottom margin to 20 pixels.
 
 
+		**********************************************
+		********** margin: 0 auto 20px; **************
+		**********************************************
 
 
+Use the filter property to blur the painting by 2px in the .canvas element. (this will apply to all its nested elements and itself)
+
+********************************************
+********************************************
+** Example of a rule that add a 3px blur: **
+**				       	  **
+** p {filter: blur(3px);}		  **
+********************************************
+********************************************
+
+.canvas {
+  width: 500px;
+  height: 600px;
+  background-color: #4d0f00;
+  overflow: hidden;
+  filter: blur(2px);
+}
+
+box-shadow
 
 
+Step 35
+Create a rule that targets both .one and .two and increase their blur effect by 1 pixel.
+
+
+.one, .two {`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+  filter:blur(1px);
+
+
+!!!!!!!!!!!**** these filter effects are additive ******!!!!!!!!!!!
+
+
+The rectangles are too small and their edges don't have the soft quality of a painting.
+
+Increase the area and soften the edges of .one by setting its box-shadow to 0 0 3px 3px #efb762. (same color as bkg)
+
+
+Step 40
+
+The corners of each rectangle are still too sharp.
+
+Round each corner of the .one element by 9 pixels, using the border-radius property.
+
+
+Step 41
+Use the border-radius property on the .two selector, to set its top-left radius and bottom-right radius to 8px, and top-right radius and bottom-left radius to 10px.
+
+
+border-radius:8px 10px;
+alt
+border-radius:8px 10px 8px 10px;
+
+Step 42
+The border-radius property accepts up to four values to round the top-left, top-right, bottom-right, and bottom-left corners.
+
+Round the top-left corner of .three by 30 pixels, the top-right by 25 pixels, the bottom-right by 60 pixels, and bottom-left by 12 pixels.
+
+
+border-radius:30px 25px 60px 12px;
+
+
+Step 43
+Rotate each rectangle to give them more of an imperfect, hand-painted look.
+
+Use the transform property on the .one selector to rotate it counter clockwise by 0.6 degrees.
+
+  transform:rotate(-0.6deg);
+
+note that parentesis hould be right next to the "rotate" text
+
+
+-----------------------------CSS FLEXBOX PHOTO GALLERY----------------------------
+-----------------------------CSS FLEXBOX PHOTO GALLERY----------------------------
+-----------------------------CSS FLEXBOX PHOTO GALLERY----------------------------
+
+
+Step 2
+Within your head element, add a meta tag with the name set to viewport and the content set to width=device-width, initial-scale=1.
+
+Also add a meta tag with the charset set to UTF-8.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta charset="utf-8">
+    
+  </head>
+  <body>
+  </body>
+</html>
 

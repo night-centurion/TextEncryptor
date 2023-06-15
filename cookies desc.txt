@@ -1,0 +1,207 @@
+
+Name : AcceptCookie
+Purpose : Remembers if the user accepts or rejects the Cookies Notice. The Cookies Notice will not reappear if the cookie is set.
+Expiry : 30 days
+
+Name :
+AcceptCookie_Functional
+Purpose :
+Remembers if the user accepts or rejects the Cookies Notice. The Cookies Notice will not reappear if the cookie is set.
+Expiry :
+30 days
+
+Name :
+AcceptCookie_Statistical
+Purpose :
+Remembers if the user accepts or rejects the Cookies Notice. The Cookies Notice will not reappear if the cookie is set.
+Expiry :
+30 days
+
+Name :
+AcceptCookie_Targeting
+Purpose :
+Remembers if the user accepts or rejects the Cookies Notice. The Cookies Notice will not reappear if the cookie is set.
+Expiry :
+30 days
+
+Name :
+BIGipServerOOCL
+Purpose :
+Facilitates server persistence.
+Expiry :
+Session
+
+Name :
+BIGipServerpool_moc_8011
+Purpose :
+Facilitates server persistence.
+Expiry :
+Session
+
+Name :
+BIGipServeriris4-wls_prs_rp
+Purpose :
+Facilitates server persistence.
+Expiry :
+Session
+
+Name :
+BIGipServerpool_ir4moc
+Purpose :
+Facilitates server persistence.
+Expiry :
+Session
+
+Name :
+BIGipServerpool_bigschedules_80
+Purpose :
+Facilitates server persistence.
+Expiry :
+Session
+
+Name :
+BIGipServerpool_csdc-captcha_http
+Purpose :
+Facilitates server persistence.
+Expiry :
+Session
+
+Name :
+BIGipServerxxxx
+Purpose :
+Facilitates server persistence.
+Expiry :
+Session
+
+Name :
+cs_test1
+Purpose :
+Checks whether cookies are enabled or not.
+Expiry :
+Session
+
+Name :
+WSS_FullScreenMode
+Purpose :
+Third party cookie set by Microsoft SharePoint which remembers whether the window is in full screen mode.
+Expiry :
+Session
+
+Name :
+ASP.NET_SessionId
+Purpose :
+General purpose platform session cookie, used by sites written with Miscrosoft .NET based technologies. Usually used to maintain an anonymised user session by the server.
+Expiry :
+Session
+
+Name :
+JSessionID
+Purpose :
+Stores a unique session identifier.
+Expiry :
+Session
+
+Name :
+Cookie_User_Session_0
+Purpose :
+Keeps user information for session identifier after the user has logged in.
+Expiry :
+Session
+
+Name :
+Track_TokenID
+Purpose :
+Identifies a valid user using single sign-on across multiple applications.
+Expiry :
+Session
+
+Name :
+Expiration_Time
+Purpose :
+Sets session expire time for the user across multiple applications.
+Expiry :
+Session
+
+Name :
+User_Name
+Purpose :
+Allows the user to access multiple applications by using single sign-on.
+Expiry :
+Session
+
+Name :
+Adaptor_Name
+Purpose :
+Allows the user to access multiple applications by using single sign-on.
+Expiry :
+Session
+
+Name :
+TokenID
+Purpose :
+Allows the user to access multiple applications by using single sign-on.
+Expiry :
+Session
+
+Name :
+IntegrityIdentifier
+Purpose :
+Prevents unauthorised use of login credentials or access of system.
+Expiry :
+Session
+
+Name :
+Key_Type
+Purpose :
+Prevents unauthorised use of login credentials or access of system.
+Expiry :
+Session
+
+Name :
+cscaptachaCookie
+Purpose :
+Stores a unique user session count.
+Expiry :
+Session
+
+Name :
+SPAnimationEnabled
+Purpose :
+Stores Boolean values to check whether website must be animated.
+Expiry :
+Session
+
+Name :
+LS__cookie_testxxx
+Purpose :
+Sticky session ID used in load balancers.
+Expiry :
+Session
+
+Name :
+CS_LB_STICKY
+Purpose :
+Sticky session ID used in load balancers.
+Expiry :
+1 year
+
+Name :
+csuid
+Purpose :
+Remembers the user’s User ID.
+Expiry :
+1 year
+
+Name :
+PLUI
+Purpose :
+Remembers the user’s User ID.
+Expiry :
+1 year
+
+Name :
+OOCL_DOT_COM
+Purpose :
+Stores a unique chat session status and session information such as user name, company name, email address, question that posted by the user and chat history.
+Expiry :
+1 year
