@@ -1241,3 +1241,29 @@ complete project
 </html>
 
 
+
+-----------------------------CSS FLEXBOX PHOTO GALLERY----------------------------
+-----------------------------CSS FLEXBOX PHOTO GALLERY----------------------------
+-----------------------------CSS FLEXBOX PHOTO GALLERY----------------------------
+
+
+
+Step 2
+Within your head element, add a meta tag with the name set to viewport and the content set to width=device-width, initial-scale=1.
+
+Also add a meta tag with the charset set to UTF-8.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta charset="utf-8">
+    
+  </head>
+  <body>
+  </body>
+</html>
+
+
+

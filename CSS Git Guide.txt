@@ -792,3 +792,205 @@ Also add a meta tag with the charset set to UTF-8.
   </body>
 </html>
 
+Step 7
+Normalize your box model by creating a * selector and setting the box-sizing property to border-box as the value.
+
+
+CSS Selector Reference
+
+https://www.w3schools.com/cssref/css_selectors.php
+
+
+*{
+  box-sizing:border-box;
+}
+
+
+---------------------------------------CSS flex Property------------------------------
+---------------------------------------CSS flex Property------------------------------
+---------------------------------------CSS flex Property------------------------------
+---------------------------------------CSS flex Property------------------------------
+
+https://www.w3schools.com/cssref/css3_pr_flex.php
+
+Step 11
+Flexbox is a one-dimensional CSS layout that can control the way items are spaced out and aligned within a container.
+
+To use it, give an element a display property of flex. This will make the element a flex container. Any direct children of a flex container are called flex items.
+
+Create a .gallery selector and make it a flex container.
+
+.gallery{
+  display:flex;
+}
+
+----------------------------------------------------------------
+HTML (updated)
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1>css flexbox photo gallery</h1>
+    </header>
+    <div class="gallery">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg">
+    </div>
+  </body>
+</html>
+
+----------------------------------------------------------------
+
+
+Step 12
+Flexbox has a main and cross axis. The main axis is defined by the flex-direction property, which has four possible values:
+
+row (default): horizontal axis with flex items from left to right
+row-reverse: horizontal axis with flex items from right to left
+column: vertical axis with flex items from top to bottom
+column-reverse: vertical axis with flex items from bottom to top
+Note: The axes and directions will be different depending on the text direction. The values shown are for a left-to-right text direction.
+
+Try the different values to see how they affect the layout.
+
+When you are done, set an explicit flex-direction of row on the .gallery element.
+
+
+Step 13
+The flex-wrap property determines how your flex items behave when the flex container is too small. Setting it to wrap will allow the items to wrap to the next row or column. nowrap (default) will prevent your items from wrapping and shrink them if needed.
+
+Make it so your flex items wrap to the next row when they run out of space.
+
+Step 14
+The justify-content property determines how the items inside a flex container are positioned along the main axis, affecting their position and the space around them.
+
+Give your .gallery selector a justify-content property with center as the value.
+
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+Step 15
+The align-items property positions the flex content along the cross axis. In this case, with your flex-direction set to row, your cross axis would be vertical.
+
+To vertically center your images, give your .gallery selector an align-items property with center as the value.
+
+
+Step 17
+Notice how some of your images have become distorted. This is because the images have different aspect ratios. Rather than setting each aspect ratio individually, you can use the object-fit property to determine how images should behave.
+
+Give your .gallery img selector the object-fit property and set it to cover. This will tell the image to fill the img container while maintaining aspect ratio, resulting in cropping to fit.
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit:cover;
+}
+
+Step 18
+Your images need some space between them.
+
+The gap CSS shorthand property sets the gaps, also knowns as gutters, between rows and columns. The gap property and its row-gap and column-gap sub-properties provide this functionality for flex, grid, and multi-column layout. You apply the property to the container element.
+
+Give your .gallery flex container a gap property with 16px as the value.
+
+
+
+Step 20
+The ::after pseudo-element creates an element that is the last child of the selected element. You can use it to add an empty element after the last image. If you give it the same width as the images it will push the last image to the left when the gallery is in a two-column layout. Right now, it is in the center because you set justify-content: center on the flex container.
+
+Example:
+
+.container::after {
+  content: "";
+  width: 860px;
+}
+Create a new selector using an ::after pseudo-element on the .gallery element. Add a content property set to an empty string "" and 350px set for the width property.
+
+.gallery::after{
+  content:"";
+  width:350px;
+  }
+
+
+---------------------------------------nutrional fatcs------------------
+
+HTML
+-----------------
+
+Within your head element, add a link element with the rel attribute set to stylesheet and the href attribute set to https://fonts.googleapis.com/css?family=Open+Sans:400,700,800.
+
+This will import the Open Sans font family, with the font weight values 400, 700, and 800.
+
+Also add a link element to link your styles.css file.
+
+-----------------------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nutrition Label</title>
+
+</head>
+
+<body>
+  <h1>Nutrition Facts</h1>
+  <p>8 servings per container</p>
+  <p>Serving size 2/3 cup (55g)</p>
+</body>
+</html>
+--------------------
+CSS
+--------------------
+
+Step 5
+Create a body selector and give it a font-family set to Open Sans with a fallback of sans-serif.
+
+Remember that fonts with spaces in the name must be wrapped in quotes for CSS.
+
+body{
+  font-family:Open Sans, sans-serif;
+}
+
+Step 10
+Give your .label selector a margin property set to 20px auto, and a padding property set to 0 7px.
+
+Note that "padding" also uses the structure of shorthand method (it is NOT 0.7 its 0 7)
+
+.label {
+  border: 2px solid black;
+  width: 270px;
+  margin:20px auto;
+  padding:0 7px;
+}
+
+Step 11
+If you inspect your .label element with your browser's developer tools, you may notice that it's actually 288 pixels wide instead of 270. This is because, by default, the browser includes the border and padding when determining an element's size.
+
+To solve this, reset the box model by creating a * selector and giving it a box-sizing property of border-box.
+
+*{
+  box-sizing: border-box;
+}
+
+[this helps reducing artifacts when positioning]
