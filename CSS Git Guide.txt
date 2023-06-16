@@ -994,3 +994,17 @@ To solve this, reset the box model by creating a * selector and giving it a box-
 }
 
 [this helps reducing artifacts when positioning]
+
+
+Step 12
+Remember that the use of h1, h2, and similar tags determine the semantic structure of your HTML. However, you can adjust the CSS of these elements to control the visual flow and hierarchy.
+
+Create an h1 rule and set the font-weight property to 800. This will make your h1 text bolder.
+
+
+Step 18
+The letter-spacing property can be used to adjust the space between each character of text in an element.
+
+Give your h1 selector a letter-spacing property set to 0.15px to space them out a bit more.
+
+
