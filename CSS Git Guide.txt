@@ -1008,3 +1008,25 @@ The letter-spacing property can be used to adjust the space between each charact
 Give your h1 selector a letter-spacing property set to 0.15px to space them out a bit more.
 
 
+Step 22
+Horizontal spacing between equally important elements can increase the readability of your text.
+
+Wrap the text 2/3 cup (55g) in a span element.
+
+
+Step 23
+Now we can add the horizontal spacing using flex. In your p selector, add a display property set to flex and a justify-content property set to space-between.
+
+<body>
+  <div class="label">
+    <h1 class="bold">Nutrition Facts</h1>
+    <div class="divider"></div>
+    <p>8 servings per container</p>
+    <p class="bold">Serving size <span>2/3 cup (55g)</span></p>
+  </div>
+</body>
+
+
+
+
+
