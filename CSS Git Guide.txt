@@ -1026,7 +1026,100 @@ Now we can add the horizontal spacing using flex. In your p selector, add a disp
   </div>
 </body>
 
+Step 31
+The rem unit stands for root em, and is relative to the font size of the html element.
+
+Create a .small-text selector and set the font-size to 0.85rem, which would calculate to roughly 13.6px (remember that you set your html to have a font-size of 16px).
+
+---------------------------------------------
+---------------------------------------------
+
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 
+  <body>
+    <header>
+    </header>
+    <main>
+    </main>
+    
+  </body>
 
+
+Step 4Passed
+Another important meta element for accessibility and SEO is the description definition. The value of the content attribute is used by search engines to provide a description of your page.
+
+Add a meta element with the name attribute set to description, and give it a useful content attribute.
+
+
+Step 5Passed
+Lastly in the head, the title element is useful for screen readers to understand the content of a page. Furthermore, it is an important part of SEO.
+
+Give your page a title that is descriptive and concise.
+
+
+Navigation is a core part of accessibility, and screen readers rely on you to provide the structure of your page. This is accomplished with semantic HTML elements.
+
+Add a header and a main element to your page.
+
+The header element will be used to introduce the page, as well as provide a navigation menu.
+
+The main element will contain the core content of your page.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Accessibility Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+
+Step 8
+A useful property of an SVG (scalable vector graphics) is that it contains a path attribute which allows the image to be scaled without affecting the resolution of the resultant image.
+
+Currently, the img is assuming its default size, which is too large. Correctly, scale the image using it's id as a selector, and setting the width to max(100px, 18vw).
+
+it seems this for SVG
+
+
+Step 9
+As described in the freeCodeCamp Style Guide, the logo should retain an aspect ratio of 35 / 4, and have padding around the text.
+
+First, change the background-color to #0a0a23 so you can see the logo. Then, use the aspect-ratio property to set the desired aspect ratio to 35 / 4. Finally, add a padding of 0.4rem all around.
+
+#logo {
+  width: max(100px, 18vw);
+  background-color:#0a0a23;
+  aspect-ratio:35/4;
+  padding:0.4rem;
+
+}
+
+Text Color
+The color property is used to set the color of the text. The color is specified by:
+
+a color name - like "red"
+a HEX value - like "#ff0000"
+an RGB value - like "rgb(255,0,0)"
+Look at CSS Color Values for a complete list of possible color values.
+
+The default text color for a page is defined in the body selector.
+
+
+Step 13
+Target unordered list elements within nav elements, and use Flexbox to evenly space the children.
+
+nav > ul {
+  display:flex;
+  justify-content:space-evenly;
+  
+}
